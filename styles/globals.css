@@ -25,3 +25,43 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url('/styles/font/Poppins-Regular.woff');
+}
+
+
+html,
+body {
+    font-family: Poppins, sans-serif;
+    font-size:medium;
+}
+
+h1 {
+    color: white;
+    font-family: Poppins, sans-serif;
+    font-size: larger;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    font-family: Poppins, sans-serif;
+    font-size: medium;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+}
+
+.homepage {
+  background-image: url('./backdrop/homepage.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
