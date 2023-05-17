@@ -17,7 +17,7 @@ const Homepage = () => {
       <div className="relative h-screen grid grid-cols-2">
         <div className="flex items-center justify-center">
           <div className="mx-auto">
-            <div className="text-white flex flex-col">
+            <div className="desc text-white flex flex-col">
               <div>
                 <h2 className="text-4xl mb-5">Hi there, I'm </h2>
                 <h1 className="text-5xl mb-10 text-orange-300" style={{ letterSpacing: '0.05em' }}>
@@ -25,12 +25,12 @@ const Homepage = () => {
                 </h1>
               </div>
               <div className="bg-[#cf6a17] h-[4px] w-[250px] mb-2"></div>
-              <h4 className="text-2xl mb-5">
+              <h4 className="typewriters text-2xl mb-5 text-gray-400">
                 <Typewriter options={typewriterOptions} />
-                <p className='max-w-[500px] mb-40 py-10'>
-                  - I'm a <strong>Software Engineer</strong>, pursuing a postgraduate degree in <strong>AI</strong> from the <strong>University of Leeds</strong>. My interests include Web Development, Mobile Applications, Game Development, and AI. Combining my passion for technology and music as a session musician, I stay updated with the latest trends, continuously learning and expanding my skillset.
-                </p>
               </h4>
+              <p className='maindesc max-w-[500px] mb-44 py-5=3'>
+                - I'm a <strong>Software Engineer</strong>, pursuing a postgraduate degree in <strong>AI</strong> from the <strong>University of Leeds</strong>. My interests include Web Development, Mobile Applications, Game Development, and AI. Combining my passion for technology and music as a session musician, I stay updated with the latest trends, continuously learning and expanding my skillset.
+              </p>
             </div>
           </div>
         </div>

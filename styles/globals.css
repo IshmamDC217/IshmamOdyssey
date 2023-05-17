@@ -18,39 +18,36 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @font-face {
-    font-family: 'Poppins', sans-serif;
-    src: url('/styles/font/Poppins-Regular.woff');
+  font-family: 'Poppins', sans-serif;
+  src: url('/styles/font/Poppins-Regular.woff');
 }
 
 
 html,
 body {
-    font-family: Poppins, sans-serif;
-    font-size:medium;
+  font-family: Poppins, sans-serif;
+  font-size: medium;
 }
 
 h1 {
-    color: white;
-    font-family: Poppins, sans-serif;
-    font-size: larger;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-size: larger;
 }
 
 h2 {
-    color: white;
+  color: white;
 }
 
 p {
-    font-family: Poppins, sans-serif;
-    font-size: medium;
+  font-family: Poppins, sans-serif;
+  font-size: medium;
 }
 
 section {
@@ -64,4 +61,17 @@ section {
   background-image: url('./backdrop/homepage.svg');
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .maindesc {
+    display: none;
+  }
+  .desc {
+    margin-left: 25%;
+    margin-bottom: 40%;
+  }
+  .typewriters {
+    display: none;
+  }
 }
