@@ -39,7 +39,7 @@ const Homepage = () => {
             </a>
           </div>
           <a style={{ position: 'relative', zIndex: '10' }}>
-              <img src={cooltree.src} alt="Ishmam Ahmed" className="w-full mt-[350px]" />
+              <img src={cooltree.src} alt="Ishmam Ahmed" className="w-full mt-[300px]" />
             </a>
         </div>
         
