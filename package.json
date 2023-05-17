@@ -13,13 +13,19 @@
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
+    "effect": "^2.0.0-next.13",
     "font-face": "^2.3.4",
+    "framer-motion": "^10.12.12",
     "next": "13.4.2",
     "next-images": "^1.8.5",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-spring": "^9.7.1",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "typewriter": "^9.0.0",
+    "typewriter-effect": "^2.19.0"
   }
 }
