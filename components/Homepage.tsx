@@ -1,7 +1,7 @@
 import React from 'react';
-import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
 import mainMe from '../public/mainMe.png';
+import cooltree from '../public/cooltree.png';
 
 const Homepage = () => {
   return (
@@ -18,29 +18,31 @@ const Homepage = () => {
               </div>
               <div className="bg-[#cf6a17] h-[4px] w-[250px] mb-6"></div>
               <h4 className="typewriters text-2xl mb-5 text-gray-400">
-                {/* <Typewriter
+                <Typewriter
                   options={{
                     strings: ['Software Engineer', 'Frontend Developer', 'Ui/Ux Designer', 'Based in Leeds, UK'],
-                    changeDelay: 3,
-                    changeDeleteSpeed: 2,
                     autoStart: true,
                     loop: true,
                   }}
-                /> */}
+                />
               </h4>
               <p className='maindesc max-w-[500px] mb-40 py-5'>
-                  - As a dedicated <strong className='text-lg'>Software Engineer</strong>, I am currently pursuing a postgraduate degree in <strong className='text-lg'>Artificial Intelligence</strong> from the <strong className='text-lg'>University of Leeds</strong> with a strong focus on <strong className='text-lg'>Web Development</strong>, <strong className='text-lg'>Mobile Applications</strong>, and <strong className='text-lg'>AI</strong>,
-                </p>
+                - As a dedicated <strong className='text-lg'>Software Engineer</strong>, I am currently pursuing a postgraduate degree in <strong className='text-lg'>Artificial Intelligence</strong> from the <strong className='text-lg'>University of Leeds</strong> with a strong focus on <strong className='text-lg'>Web Development</strong>, <strong className='text-lg'>Mobile Applications</strong>, and <strong className='text-lg'>AI</strong>,
+              </p>
             </div>
           </div>
         </div>
         <div className="flex items-center justify-center mb-60">
           <div className="mx-auto">
             <a>
-              <Image src={mainMe} className="w-full h-full" />
+              <img src={mainMe.src} alt="Ishmam Ahmed" className="w-[900px]" />
             </a>
           </div>
+          <a style={{ position: 'relative', zIndex: '10' }}>
+              <img src={cooltree.src} alt="Ishmam Ahmed" className="w-full mt-[350px]" />
+            </a>
         </div>
+        
       </div>
     </section>
   );
