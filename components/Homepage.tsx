@@ -12,25 +12,25 @@ const Homepage = () => {
             <div className="text-white flex flex-col">
               <div>
                 <h2 className="text-4xl mb-5">Hi there, I'm </h2>
-                <h1 className="text-5xl mb-10 text-orange-300" style={{ letterSpacing: '0.05em' }}>
+                <h1 className="text-5xl mb-5 text-orange-300" style={{ letterSpacing: '0.05em' }}>
                   Ishmam Ahmed
                 </h1>
               </div>
-              <div className="bg-[#cf6a17] h-[4px] w-[250px] mb-2"></div>
-              <h4 className="text-2xl mb-5">
+              <div className="bg-[#cf6a17] h-[4px] w-[250px] mb-6"></div>
+              <h4 className="text-2xl mb-5 text-gray-400">
                 <Typewriter
                   options={{
-                    strings: ['Frontend Developer', 'Ui/Ux Designer', 'Leeds, UK'],
+                    strings: ['Software Engineer', 'Frontend Developer', 'Ui/Ux Designer', 'Based in Leeds, UK'],
                     changeDelay: 3,
                     changeDeleteSpeed: 2,
                     autoStart: true,
                     loop: true,
                   }}
                 />
-                <p className='max-w-[500px] mb-40 py-5'>
+              </h4>
+              <p className='max-w-[500px] mb-40 py-5'>
                   - As a dedicated <strong className='text-lg'>Software Engineer</strong>, I am currently pursuing a postgraduate degree in <strong className='text-lg'>Artificial Intelligence</strong> from the <strong className='text-lg'>University of Leeds</strong> with a strong focus on <strong className='text-lg'>Web Development</strong>, <strong className='text-lg'>Mobile Applications</strong>, and <strong className='text-lg'>AI</strong>,
                 </p>
-              </h4>
             </div>
           </div>
         </div>
