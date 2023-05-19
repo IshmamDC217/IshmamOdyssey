@@ -23,21 +23,19 @@ body {
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Poppins', sans-serif;
   src: url('/styles/font/Poppins-Regular.woff');
-}
+} */
 
 
 html,
 body {
-  font-family: Poppins, sans-serif;
   font-size: medium;
 }
 
 h1 {
   color: white;
-  font-family: Poppins, sans-serif;
   font-size: larger;
 }
 
@@ -46,7 +44,6 @@ h2 {
 }
 
 p {
-  font-family: Poppins, sans-serif;
   font-size: medium;
 }
 
@@ -74,4 +71,101 @@ section {
   .typewriters {
     display: none;
   }
+}
+
+/* Trying award css */
+.homepage {
+  background-color: #121212; 
+}
+
+.relative {
+  position: relative;
+}
+
+.h-screen {
+  height: 100vh; 
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-white {
+  color: white;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.desc h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.desc h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ff8c00;
+  letter-spacing: 0.05em;
+}
+
+.typewriters {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: gray;
+}
+
+/* .maindesc {
+  max-width: 500px;
+  margin-bottom: 160px;
+  padding: 20px;
+} */
+
+.maindesc strong {
+  font-size: 1.2em;
+}
+
+/* @font-face {
+  font-family: 'LQR', sans-serif;
+  src: url('/styles/font/LoversQuarrel-Regular.ttf');
+} */
+
+/* @font-face {
+  font-family: 'Arizonia', sans-serif;
+  src: url('/styles/fonts/Arizonia-Regular.ttf') format('opentype');
+}
+
+h1 {
+  font-family: 'Arizonia';
+} */
+
+@font-face {
+  font-family: 'Arizonia';
+  src: url('/styles/fonts/Arizonia-Regular.ttf') format('opentype');
+}
+
+h1 {
+  font-family: 'Arizonia', sans-serif;
 }

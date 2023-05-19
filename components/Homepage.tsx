@@ -3,6 +3,7 @@ import Typewriter from 'typewriter-effect';
 import mainMe from '../public/mainMe.png';
 import cooltree from '../public/cooltree.png';
 import { motion } from 'framer-motion';
+import { Lovers_Quarrel } from 'next/font/google';
 
 const Homepage = () => {
   return (
@@ -18,15 +19,15 @@ const Homepage = () => {
               <div className="text-white flex flex-col">
                 <div className='desc'>
                   <h2 className="text-4xl mb-5">Hi there, I'm </h2>
-                  <h1 className="text-5xl mb-5 text-orange-300" style={{ letterSpacing: '0.05em' }}>
+                  <h1 className="text-5xl mb-5 text-orange-300">
                     Ishmam Ahmed
                   </h1>
                 </div>
-                <div className="bg-[#cf6a17] h-[4px] w-[250px] mb-6"></div>
+                <div className="orangeline bg-[#cf6a17] h-[4px] w-[250px] mb-6"></div>
                 <h4 className="typewriters text-2xl mb-5 text-gray-400">
                   <Typewriter
                     options={{
-                      strings: ['Software Engineer', 'Frontend Developer', 'Ui/Ux Designer', 'Based in Leeds, UK'],
+                      strings: ['Leeds Based', 'Software Engineer', 'Frontend Developer', 'Ui/Ux Designer'],
                       autoStart: true,
                       loop: true,
                     }}
@@ -38,7 +39,7 @@ const Homepage = () => {
                   transition={{ duration: 0.8, delay: 0.3 }}
                   className='maindesc max-w-[500px] mb-40 py-5'
                 >
-                  - As a dedicated <strong className='text-lg'>Software Engineer</strong>, I am currently pursuing a postgraduate degree in <strong className='text-lg'>Artificial Intelligence</strong> from the <strong className='text-lg'>University of Leeds</strong> with a strong focus on <strong className='text-lg'>Web Development</strong>, <strong className='text-lg'>Mobile Applications</strong>, and <strong className='text-lg'>AI</strong>,
+                  As a dedicated <strong className='font-bold'>Software Engineer</strong>, I am currently pursuing a postgraduate degree in <strong className='font-bold'>Artificial Intelligence</strong> from the <strong className='font-bold'>University of Leeds</strong> with a strong focus on <strong className='font-bold'>Web Development</strong>, <strong className='font-bold'>Mobile Applications</strong>, and <strong className='font-bold'>AI</strong>,
                 </motion.p>
               </div>
             </motion.div>
