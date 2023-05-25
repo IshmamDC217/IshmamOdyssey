@@ -2,8 +2,11 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import mainMe from '../public/mainMe.png';
 import cooltree from '../public/cooltree.png';
+import camel from '../public/camel.png';
 import { motion } from 'framer-motion';
-import { Lovers_Quarrel } from 'next/font/google';
+
+import 'atropos/css'
+import Atropos from 'atropos/react';
 
 const Homepage = () => {
   return (
@@ -47,17 +50,18 @@ const Homepage = () => {
         </div>
         <div className="flex items-center justify-center mb-60">
           <div className="mx-auto">
-            <a>
-              <motion.img
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                src={mainMe.src}
-                alt="Ishmam Ahmed"
-                className="w-[900px]"
-              />
-            </a>
+            <motion.img
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              src={mainMe.src}
+              alt="Ishmam Ahmed"
+              className="w-[900px]"
+            />
           </div>
+          {/* <a>
+            <img src={camel.src} className="w-1/3 mt-[300px]" />
+          </a> */}
           {/* <motion.a
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}

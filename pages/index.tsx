@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Navigation from '@/components/Navigation'
 import Homepage from '@/components/Homepage' 
+import Work from '@/components/Work' 
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
 
       <main>
         <Homepage/>
-
+        <Work />
       </main>
 
     </div>
