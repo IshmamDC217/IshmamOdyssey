@@ -308,3 +308,11 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width: 760px) {
+  .contactcontainer {
+    font-size: small;
+    width: 80%;
+    border-radius: 0%;
+  }
+}
