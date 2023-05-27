@@ -2,11 +2,11 @@ import { FunctionComponent } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import metoraweb1 from '../public/metoraweb1.png';
-import metoraweb2 from '../public/metoraweb2.png';
+import macmet from '../public/macmet.png';
 import crypticchat1 from '../public/crypticchat1.png';
-import crypticchat2 from '../public/crypticchat2.png';
+import maccrypticchat from '../public/maccrypticchat.png';
 import golweb1 from '../public/golweb1.png';
-import golweb2 from '../public/golweb2.png';
+import golmac from '../public/golmac.png';
 import metoralogo from '../public/metoralogo.png';
 import lock192 from '../public/lock192.png';
 import gollogo from '../public/gollogo.jpg';
@@ -17,7 +17,7 @@ import Atropos from 'atropos/react';
 const Work: FunctionComponent = () => {
   const metoraweb = [
     {
-      image: metoraweb1,
+      image: macmet,
       title: 'Metora Cliffs Web: Homepage',
       link: 'https://metoracliffs.netlify.app',
     }
@@ -25,7 +25,7 @@ const Work: FunctionComponent = () => {
 
   const crypticchat = [
     {
-      image: crypticchat1,
+      image: maccrypticchat,
       title: 'Cryptic Chat: Log In',
       link: 'https://cryptichat.benmitchell.dev/',
     }
@@ -33,7 +33,7 @@ const Work: FunctionComponent = () => {
 
   const goljs = [
     {
-      image: golweb1,
+      image: golmac,
       title: 'Metora Cliffs Web: Homepage',
       link: 'https://comp5400-game-of-life.netlify.app/',
     }
