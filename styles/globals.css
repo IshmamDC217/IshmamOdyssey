@@ -201,7 +201,7 @@ section {
 }
 
 .glass-container {
-  background-color: rgba(81, 138, 213, 0.309);
+  background-color: rgba(0, 0, 0, 0.309);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
@@ -215,7 +215,7 @@ section {
 }
 
 .innerglasscontainer {
-  background-color: rgba(229, 225, 225, 0.309);
+  background-color: rgba(229, 225, 225, 0.638);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
