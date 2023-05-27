@@ -24,8 +24,7 @@ const Homepage = () => {
                     Ishmam Ahmed
                   </h1>
                 </div>
-                <div className="w-[0px] lg:orangeline bg-[#cf6a17] h-[4px] w-1/2 mb-6"></div>
-                <h4 className="typewriters text-2xl mb-5 text-gray-400">
+                <h4 className="typewriters text-2xl text-gray-400">
                   <Typewriter
                     options={{
                       strings: ['Leeds Based', 'Software Engineer', 'Frontend Developer', 'Ui/Ux Designer'],
@@ -38,7 +37,7 @@ const Homepage = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className='maindesc max-w-[500px] mb-40 py-5'
+                  className='maindesc max-w-[500px] mb-60'
                 >
                   As a dedicated <strong className='font-bold'>Software Engineer</strong>, I am currently pursuing a postgraduate degree in <strong className='font-bold'>Artificial Intelligence</strong> from the <strong className='font-bold'>University of Leeds</strong> with a strong focus on <strong className='font-bold'>Web Development</strong>, <strong className='font-bold'>Mobile Applications</strong>, and <strong className='font-bold'>AI</strong>,
                 </motion.p>
