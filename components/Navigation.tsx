@@ -30,10 +30,9 @@ const Navigation = () => {
           </svg>
         </button>
         <div
-          className={`${
-            isDropdownOpen ? 'block' : 'hidden'
-          } w-full md:block md:w-auto`}
-          id="navbar-multi-level"
+          className={`${isDropdownOpen ? 'block' : 'hidden'
+            } w-full md:block md:w-auto`}
+          id="navbar-multi-level" style={{zIndex: 10}}
         >
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
@@ -54,65 +53,68 @@ const Navigation = () => {
               >
                 Work
                 <svg
-                  className={`w-5 h-5 ml-1 transform ${
-                    isDropdownOpen ? 'rotate-180' : ''
-                  }`}
+                  className={`w-5 h-5 ml-1 transform ${isDropdownOpen ? 'rotate-180' : ''
+                    }`}
                   aria-hidden="true"
                   fill="currentColor"
                   viewBox="0 0             20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-                <ul
-                  className={`${
-                    isDropdownOpen ? 'block' : 'hidden'
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+              <ul
+                className={`${isDropdownOpen ? 'block' : 'hidden'
                   } absolute left-0 mt-2 w-40 py-2 bg-white rounded-lg shadow-lg dark:bg-gray-800`}
-                  aria-labelledby="dropdownNavbarLink"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:text-orange-400"
-                    >
-                      Project 1
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:text-orange-400"
-                    >
-                      Project 2
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:text-orange-400"
-                    >
-                      Project 3
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+              >
+                <li>
+                  <a
+                    href="https://metoracliffs.netlify.app"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:text-orange-400"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Metora Cliffs Web
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://cryptichat.benmitchell.dev/"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:text-orange-400"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Cryptic Chat
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://comp5400-game-of-life.netlify.app/"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:text-orange-400"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Game of Life
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="block text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-);
+    </div>
+  );
 };
 
 export default Navigation;       
