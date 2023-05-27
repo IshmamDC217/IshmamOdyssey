@@ -54,7 +54,7 @@ const Homepage = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               src={mainMe.src}
               alt="Ishmam Ahmed"
-              className="mainDP w-80 mt-9 md:w-96 md:mt-10 border rounded-full"
+              className="mainDP w-80 md:w-96 md:mt-10 border rounded-full"
             />
           </div>
         </div>
