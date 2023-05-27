@@ -35,7 +35,7 @@ const Work: FunctionComponent = () => {
     {
       image: golweb1,
       title: 'Metora Cliffs Web: Homepage',
-      link: 'https://metoracliffs.netlify.app',
+      link: 'https://comp5400-game-of-life.netlify.app/',
     }
   ];
 
