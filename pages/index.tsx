@@ -3,7 +3,9 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import Navigation from '@/components/Navigation'
 import Homepage from '@/components/Homepage' 
-import Work from '@/components/Work' 
+import HomepageMob from '@/components/HomepageMob' 
+import Work from '@/components/Work'
+import WorkMob from '@/components/WorkMob' 
 
 export default function Home() {
   return (
@@ -20,7 +22,9 @@ export default function Home() {
 
       <main>
         <Homepage/>
+        <HomepageMob/>
         <Work />
+        <WorkMob />
       </main>
 
     </div>

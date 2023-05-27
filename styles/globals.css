@@ -64,10 +64,12 @@ section {
   .maindesc {
     display: none;
   }
+
   .desc {
     margin-left: 25%;
     margin-bottom: 40%;
   }
+
   .typewriters {
     display: none;
   }
@@ -75,7 +77,7 @@ section {
 
 /* Trying award css */
 .homepage {
-  background-color: #121212; 
+  background-color: #121212;
 }
 
 .relative {
@@ -83,7 +85,7 @@ section {
 }
 
 .h-screen {
-  height: 100vh; 
+  height: 100vh;
 }
 
 .grid {
@@ -199,7 +201,7 @@ section {
 }
 
 .glass-container {
-  background-color: rgba(25, 170, 238, 0.309);
+  background-color: rgba(81, 138, 213, 0.309);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
@@ -212,9 +214,82 @@ section {
   padding: 20px;
 }
 
-.innerglasscontainer{
+.innerglasscontainer {
   background-color: rgba(229, 225, 225, 0.309);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
+}
+
+@media (min-width: 760px) {
+  .homepagemob {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .homepage {
+    display: none;
+  }
+}
+
+.homepagemob {
+  background-image: url('./backdrop/homepagemob.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 760px) {
+  .workmob {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .work {
+    display: none;
+  }
+}
+
+.workmob {
+  background-image: url('./backdrop/workmob.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 760px) {
+  .glass-container {
+    background-color: rgba(81, 138, 213, 0.309);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 0%;
+  }
+
+  .glass-container2 {
+    background-color: rgba(27, 64, 215, 0.309);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 0%;
+  }
+}
+
+@media (max-width: 760px) {
+  .projimage {
+    width: 90%;
+  }
+
+  .projlogo {
+    width: 20%;
+    height: 20%;
+  }
+}
+
+@media (max-width: 376px) {
+  .pfbio {
+    font-size: x-small;
+    width: 80%;
+  }
+  .mainDP {
+    width: 12rem;
+  }
 }
