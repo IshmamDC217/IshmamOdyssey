@@ -113,7 +113,7 @@ const Work: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className='glass-container2 rounded-lg my-4' style={{ padding: '15px' }}>
+      <div className='glass-container2 rounded-lg my-20' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={lock192.src} className='w-[100px] mb-5 border rounded-full' />
