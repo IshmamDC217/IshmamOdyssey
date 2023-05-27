@@ -293,3 +293,18 @@ section {
     width: 12rem;
   }
 }
+
+.contactcontainer {
+  background-color: rgba(56, 39, 9, 0.441);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 0%;
+  width: 35%;
+  border-radius: 5%;
+}
+
+.contactme {
+  background-image: url('./backdrop/contact.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
