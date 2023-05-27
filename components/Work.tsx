@@ -56,7 +56,7 @@ const Work: FunctionComponent = () => {
 
   return (
     <section className="work">
-      <div className='glass-container' style={{ padding: '20px' }}>
+      <div className='glass-container' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={metoralogo.src} className='w-[80px] mb-5 ' />
@@ -94,7 +94,7 @@ const Work: FunctionComponent = () => {
             ))}
           </div>
         </div>
-        <div className="project-description my-16 max-w-7xl">
+        <div className="project-description my-5 max-w-7xl">
           <Link href='https://metoracliffs.netlify.app'
             target="_blank"
             rel="noopener noreferrer" className="text-white text-2xl font-semibold mb-2 rounded
@@ -113,10 +113,10 @@ const Work: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className='glass-container2 rounded-lg my-4' style={{ padding: '20px' }}>
+      <div className='glass-container2 rounded-lg my-4' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
-            <img src={lock192.src} className='w-[100px] mb-4 border rounded-full' />
+            <img src={lock192.src} className='w-[100px] mb-5 border rounded-full' />
             <h2 className="text-3xl font-bold mx-6 my-7">End-to-End Encrypted Messaging Platform</h2>
           </div>
           <div className="container rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#12121262', padding: '80px' }}>
@@ -151,7 +151,7 @@ const Work: FunctionComponent = () => {
             ))}
           </div>
         </div>
-        <div className="project-description my-16 max-w-7xl">
+        <div className="project-description my-5 max-w-7xl">
           <Link href='https://cryptichat.benmitchell.dev/'
             target="_blank"
             rel="noopener noreferrer" className="text-white text-2xl font-semibold mb-2 rounded
@@ -174,10 +174,10 @@ const Work: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className='glass-container2 rounded-lg' style={{ padding: '20px' }}>
+      <div className='glass-container2 rounded-lg' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
-            <img src={gollogo.src} className='w-[100px] mb-4' />
+            <img src={gollogo.src} className='w-[90px] mb-5' />
             <h2 className="text-3xl font-bold mx-6 my-7">Conway's Game of Life - Javascript</h2>
           </div>
           <div className="container rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#12121262', padding: '80px' }}>
@@ -212,31 +212,34 @@ const Work: FunctionComponent = () => {
             ))}
           </div>
         </div>
-        <div className="project-description my-16 max-w-7xl">
-          <Link href='https://comp5400-game-of-life.netlify.app/'
+        <div className="project-description my-5 max-w-7xl">
+          <Link
+            href="https://comp5400-game-of-life.netlify.app/"
             target="_blank"
-            rel="noopener noreferrer" className="text-white text-2xl font-semibold mb-2 rounded
+            rel="noopener noreferrer"
+            className="text-white text-2xl font-semibold mb-2 rounded
              hover:bg-gray-100 md:hover:bg-transparent md:border-0
              md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
              dark:hover:bg-gray-700 dark:hover:text-white 
-             md:dark:hover:bg-transparent flex justify-center items-center">Game Of Life JS</Link>
+             md:dark:hover:bg-transparent flex justify-center items-center"
+          >
+            Game Of Life JS
+          </Link>
           <p className="innerglasscontainer text-black text-center text-lg">
-            This implementation showcases Conway's Game of Life using JavaScript, 
-            an intriguing cellular automaton conceived by the esteemed British mathematician 
-            John Horton Conway in 1970. The game unfolds on a two-dimensional grid consisting 
-            of cells, each existing in either an alive or dead state. The game progresses 
-            through successive generations based on a set of rules that govern the survival 
-            or demise of each cell. The underlying principles of the game involve the following 
-            rules: Firstly, any live cell with fewer than two live neighbors perishes due to 
-            underpopulation. Secondly, a live cell with two or three live neighbors persists 
-            into the subsequent generation. Thirdly, any live cell with more than three live 
-            neighbors succumbs to overpopulation and dies. Lastly, a dead cell precisely 
-            surrounded by three live neighbors springs to life through reproduction. 
-            This implementation delves into the intricacies of Conway's Game of Life, 
-            providing a professional and insightful exploration of this captivating 
-            mathematical simulation.
+            This implementation showcases Conway's Game of Life using JavaScript, an intriguing cellular automaton
+            conceived by the esteemed British mathematician John Horton Conway in 1970. The game unfolds on a
+            two-dimensional grid consisting of cells, each existing in either an alive or dead state. The game
+            progresses through successive generations based on a set of rules that govern the survival or demise
+            of each cell. The underlying principles of the game involve the following rules: Firstly, any live
+            cell with fewer than two live neighbors perishes due to underpopulation. Secondly, a live cell with
+            two or three live neighbors persists into the subsequent generation. Thirdly, any live cell with more
+            than three live neighbors succumbs to overpopulation and dies. Lastly, a dead cell precisely surrounded
+            by three live neighbors springs to life through reproduction. This implementation delves into the
+            intricacies of Conway's Game of Life, providing a professional and insightful exploration of this
+            captivating mathematical simulation.
           </p>
         </div>
+
       </div>
     </section>
   );

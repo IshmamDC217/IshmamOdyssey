@@ -2,11 +2,9 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import mainMe from '../public/mainMe.png';
 import cooltree from '../public/cooltree.png';
-import camel from '../public/camel.png';
 import { motion } from 'framer-motion';
-
 import 'atropos/css'
-import Atropos from 'atropos/react';
+
 
 const Homepage = () => {
   return (
@@ -26,7 +24,7 @@ const Homepage = () => {
                     Ishmam Ahmed
                   </h1>
                 </div>
-                <div className="orangeline bg-[#cf6a17] h-[4px] w-[250px] mb-6"></div>
+                <div className="w-[0px] lg:orangeline bg-[#cf6a17] h-[4px] w-1/2 mb-6"></div>
                 <h4 className="typewriters text-2xl mb-5 text-gray-400">
                   <Typewriter
                     options={{
@@ -59,17 +57,8 @@ const Homepage = () => {
               className="w-[900px]"
             />
           </div>
-          {/* <a>
-            <img src={camel.src} className="w-1/3 mt-[300px]" />
-          </a> */}
-          {/* <motion.a
-            initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.9 }}
-            style={{ position: 'relative', zIndex: '10' }}
-          > */}
           <a>
-            <img src={cooltree.src} alt="Ishmam Ahmed" className="w-full mt-[300px]" />
+            <img src={cooltree.src} alt="Ishmam Ahmed" className="w-[0px] lg:w-full mt-[300px]" />
           </a>
         </div>
       </div>
