@@ -243,6 +243,9 @@ section {
   .workmob {
     display: none;
   }
+  .sidebarmob {
+    display: none;
+  }
 }
 
 @media (max-width: 760px) {
@@ -314,5 +317,8 @@ section {
     font-size: small;
     width: 80%;
     border-radius: 0%;
+  }
+  .dropdownmob {
+    display: none;
   }
 }
