@@ -35,9 +35,9 @@ const ContactMe = () => {
 
     return (
         <section className="contactme">
-            <div className="container contactcontainer" style={{padding:'9px'}}>
+            <div className="container contactcontainer" style={{ padding: '9px' }}>
                 <h2 className="text-4xl font-bold text-center mb-6">Get in Touch</h2>
-                <p className="text-lg text-center mb-10">
+                <p className="text-lg text-center mb-5">
                     Have a question or want to collaborate? Feel free to reach out to me.
                 </p>
                 <div className="max-w-lg mx-auto">
@@ -55,7 +55,7 @@ const ContactMe = () => {
                             <input type="hidden" name="form-name" value="contact" />
                             <div className="mb-4">
                                 <label htmlFor="name" className="block text-lg font-semibold mb-2">
-                                    Name
+                                    <i className="fas fa-user"></i> Name
                                 </label>
                                 <input
                                     type="text"
@@ -65,6 +65,7 @@ const ContactMe = () => {
                                     onChange={handleChange}
                                     required
                                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                    style={{ borderRadius: '25px' }}
                                 />
                             </div>
                             <div className="mb-4">
