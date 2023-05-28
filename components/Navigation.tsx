@@ -1,120 +1,108 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
 import { RiEarthFill } from 'react-icons/ri';
+import { GiFire } from 'react-icons/gi';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import Sidebar from './Sidebar';
+import { BsHouseDoorFill } from 'react-icons/bs';
+import { RiComputerFill, RiContactsBook2Fill } from 'react-icons/ri';
 
 const Navigation = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
   return (
-    <div className="navbar bg-white border-gray-200 dark:bg-slate-900 dark:border-gray-700">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center">
-          <RiEarthFill className="w-8 h-8 mr-3 text-orange-700 dark:text-orange-500" />
-          <span className="self-center text-2xl font-semibold dark:text-white">My Odyssey</span>
-        </a>
+    <nav className="bg-white dark:bg-gray-900 shadow px-4 md:px-24 py-3 flex justify-between items-center relative">
+      <div className="flex items-center">
+        <RiEarthFill className="w-8 h-8 mr-3 text-orange-700 dark:text-orange-500" />
+        <a href="#" className="text-2xl font-semibold dark:text-white">My Odyssey</a>
+      </div>
+      <div className="md:hidden">
         <button
-          data-collapse-toggle="navbar-multi-level"
-          type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-          aria-controls="navbar-multi-level"
-          aria-expanded={isDropdownOpen}
-          onClick={toggleDropdown}
+          onClick={toggleSidebar}
+          className="text-gray-700 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500"
         >
-          <span className="sr-only">Open main menu</span>
-          <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" clipRule="evenodd"></path>
-          </svg>
+          {sidebarOpen ? <FaTimes className="w-1 h-1 text-gray-900" /> : <FaBars className="w-6 h-6 mt-1 text-orange-500" />}
         </button>
-        <div
-          className={`${isDropdownOpen ? 'block' : 'hidden'
-            } w-full md:block md:w-auto`}
-          id="navbar-multi-level" style={{zIndex: 10}}
-        >
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <a
-                href="#"
-                className="block py-2 pl-3 pr-4 text-white bg-orange-700 rounded md:bg-transparent md:text-orange-700 md:p-0 md:dark:text-orange-400 dark:bg-orange-600 md:dark:bg-transparent"
-                aria-current="page"
+      </div>
+
+      <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+
+      <div className="hidden md:flex items-center">
+        <div className="ml-10 flex items-baseline space-x-4">
+          <a href="#" className="text-gray-700 dark:text-gray-300 hover:text-orange-700 dark:hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium flex items-center" aria-current="page"><BsHouseDoorFill className="w-5 h-5 mr-2 text-orange-700 dark:text-orange-500" />
+            Home</a>
+          <div className="relative mt-2">
+            <button
+              onClick={toggleDropdown}
+              className="text-gray-700 dark:text-gray-300 hover:text-orange-700 dark:hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium flex items-center"
+            >
+              <RiComputerFill className="w-5 h-5 mr-2 text-orange-700 dark:text-orange-500" />
+              Work
+              <svg
+                className={`w-5 h-5 ml-1 transform ${isDropdownOpen ? 'rotate-180' : ''}`}
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
               >
-                Home
-              </a>
-            </li>
-            <li className="relative">
-              <button
-                id="dropdownNavbarLink"
-                data-dropdown-toggle="dropdownNavbar"
-                className="flex items-center justify-between w-full text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-orange-400 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-                onClick={toggleDropdown}
-              >
-                Work
-                <svg
-                  className={`w-5 h-5 ml-1 transform ${isDropdownOpen ? 'rotate-180' : ''
-                    }`}
-                  aria-hidden="true"
-                  fill="currentColor"
-                  viewBox="0 0             20"
+                <path
+                  fillRule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div className={`origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 dark:bg-gray-800 ${isDropdownOpen ? 'block' : 'hidden'}`} style={{ zIndex: 10 }}>
+              <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                <a
+                  href="https://metoracliffs.netlify.app"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  role="menuitem"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </button>
-              <ul
-                className={`${isDropdownOpen ? 'block' : 'hidden'
-                  } absolute left-0 mt-2 w-40 py-2 bg-white rounded-lg shadow-lg dark:bg-gray-800`}
-              >
-                <li>
-                  <a
-                    href="https://metoracliffs.netlify.app"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:text-orange-400"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Metora Cliffs Web
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://cryptichat.benmitchell.dev/"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:text-orange-400"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Cryptic Chat
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://comp5400-game-of-life.netlify.app/"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:text-orange-400"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Game of Life
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a
-                href="/contact"
-                className="block text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-orange-700 md:p-0 dark:text-white md:dark:hover:text-orange-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
+                  Metora Cliffs Web
+                </a>
+                <a
+                  href="https://cryptichat.benmitchell.dev/"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  role="menuitem"
+                >
+                  Cryptic Chat
+                </a>
+                <a
+                  href="https://comp5400-game-of-life.netlify.app/"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  role="menuitem"
+                >
+                  Game of Life
+                </a>
+              </div>
+            </div>
+          </div>
+          <a
+            href="/contact"
+            className="text-gray-700 dark:text-gray-300 hover:text-orange-700 dark:hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium flex items-center"
+          >
+            <RiContactsBook2Fill className="w-5 h-5 mr-2 text-orange-700 dark:text-orange-500" />
+                            Contact
+          </a>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
-export default Navigation;       
+export default Navigation;
+
