@@ -93,7 +93,7 @@ const ContactMe = () => {
                                     onChange={handleChange}
                                     required
                                     rows={4}
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
+                                    className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
                                 ></textarea>
                             </div>
                             <div className="text-center">
