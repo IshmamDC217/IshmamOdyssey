@@ -307,7 +307,7 @@ section {
 }
 
 .contactme {
-  background-image: url('./backdrop/contact.svg');
+  background-image: url('./backdrop/contactbg.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
