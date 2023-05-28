@@ -1,7 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import mainMe from '../public/mainMe.png';
-import cooltree from '../public/cooltree.png';
+import mainish from '../public/mainish.png';
 import { motion } from 'framer-motion';
 import 'atropos/css'
 
@@ -10,40 +9,33 @@ const Homepage = () => {
   return (
     <section className="homepage">
       <div className="relative h-screen grid grid-cols-2">
-        <div className="flex items-center justify-center">
-          <div className="mx-auto">
-            <motion.div
-              initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+        <div className="flex flex-col md:flex-row md:justify-between min-h-screen">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mb-10 md:mt-60"
+          >
+            <h2 className="text-3xl md:text-4xl mb-3 font-semibold">Hi there, I'm</h2>
+            <h1 className="text-4xl md:text-5xl mb-5 text-orange-300 font-bold">Ishmam Ahmed</h1>
+            <h4 className="text-lg md:text-2xl text-gray-400 mb-5">
+              <Typewriter
+                options={{
+                  strings: ['Leeds Based', 'Software Engineer', 'Frontend Developer', 'Ui/Ux Designer'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h4>
+            <motion.p
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className='text-sm md:text-base max-w-[500px]'
             >
-              <div className="text-white flex flex-col">
-                <div className='desc'>
-                  <h2 className="text-4xl mb-5">Hi there, I'm </h2>
-                  <h1 className="text-5xl mb-5 text-orange-300">
-                    Ishmam Ahmed
-                  </h1>
-                </div>
-                <h4 className="typewriters text-2xl text-gray-400">
-                  <Typewriter
-                    options={{
-                      strings: ['Leeds Based', 'Software Engineer', 'Frontend Developer', 'Ui/Ux Designer'],
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />
-                </h4>
-                <motion.p
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.3 }}
-                  className='maindesc max-w-[500px] mb-60'
-                >
-                  As a dedicated <strong className='font-bold'>Software Engineer</strong>, I am currently pursuing a postgraduate degree in <strong className='font-bold'>Artificial Intelligence</strong> from the <strong className='font-bold'>University of Leeds</strong> with a strong focus on <strong className='font-bold'>Web Development</strong>, <strong className='font-bold'>Mobile Applications</strong>, and <strong className='font-bold'>AI</strong>,
-                </motion.p>
-              </div>
-            </motion.div>
-          </div>
+              As a dedicated <strong className='font-bold'>Software Engineer</strong>, I am currently pursuing a postgraduate degree in <strong className='font-bold'>Artificial Intelligence</strong> from the <strong className='font-bold'>University of Leeds</strong> with a strong focus on <strong className='font-bold'>Web Development</strong>, <strong className='font-bold'>Mobile Applications</strong>, and <strong className='font-bold'>AI</strong>.
+            </motion.p>
+          </motion.div>
         </div>
         <div className="flex items-center justify-center mb-60">
           <div className="mx-auto">
@@ -51,14 +43,15 @@ const Homepage = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              src={mainMe.src}
+              src={mainish.src}
               alt="Ishmam Ahmed"
-              className="w-[900px]"
+              className="w-[600px] border rounded-full"
             />
           </div>
-          <a>
-            <img src={cooltree.src} alt="Ishmam Ahmed" className="w-[0px] lg:w-full mt-[300px]" />
-          </a>
+        </div>
+        <div className="flex items-center justify-center">
+          <div className="mx-auto">
+          </div>
         </div>
       </div>
     </section>
