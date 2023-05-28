@@ -1,6 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import mainMe from '../public/mainMe.png';
+import mainish from '../public/mainish.png';
 import cooltree from '../public/cooltree.png';
 import camel from '../public/camel.png';
 import { motion } from 'framer-motion';
@@ -42,9 +42,9 @@ const Homepage = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              src={mainMe.src}
+              src={mainish.src}
               alt="Ishmam Ahmed"
-              className="mainDP w-80 mt-6 md:w-96 md:mt-10 border rounded-full"
+              className="mainDP w-80 mt-16 md:w-96 md:mt-10 border rounded-full"
             />
           </div>
         </div>
