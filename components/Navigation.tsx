@@ -19,7 +19,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow px-4 md:px-24 py-3 flex justify-between items-center relative">
+    <nav className="bg-white dark:bg-gray-900 shadow px-4 md:px-24 lg:px-80 py-3 flex justify-between items-center relative">
       <div className="flex items-center">
         <RiEarthFill className="w-8 h-8 mr-3 text-orange-700 dark:text-orange-500" />
         <a href="#" className="text-2xl font-semibold dark:text-white">My Odyssey</a>
@@ -54,7 +54,7 @@ const Navigation = () => {
               >
                 <path
                   fillRule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                   clipRule="evenodd"
                 ></path>
               </svg>
@@ -63,7 +63,7 @@ const Navigation = () => {
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                 <a
                   href="https://metoracliffs.netlify.app"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                  className="block px-4 py-2                   text-sm text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="menuitem"
@@ -96,7 +96,7 @@ const Navigation = () => {
             className="text-gray-700 dark:text-gray-300 hover:text-orange-700 dark:hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium flex items-center"
           >
             <RiContactsBook2Fill className="w-5 h-5 mr-2 text-orange-700 dark:text-orange-500" />
-                            Contact
+            Contact
           </a>
         </div>
       </div>
