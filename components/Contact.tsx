@@ -65,7 +65,6 @@ const ContactMe = () => {
                                     onChange={handleChange}
                                     required
                                     className="w-full px-4 py-2 border text-black border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
-                                    style={{ borderRadius: '25px' }}
                                 />
                             </div>
                             <div className="mb-4">
