@@ -289,11 +289,10 @@ section {
 
 @media (max-width: 376px) {
   .pfbio {
-    font-size: x-small;
-    width: 80%;
+    font-size: smaller;
   }
   .mainDP {
-    width: 12rem;
+    width: 14rem;
   }
 }
 
