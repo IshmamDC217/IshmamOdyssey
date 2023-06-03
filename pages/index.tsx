@@ -6,7 +6,8 @@ import Homepage from '@/components/Homepage'
 import HomepageMob from '@/components/HomepageMob' 
 import Work from '@/components/Work'
 import WorkMob from '@/components/WorkMob'
-import Contact from '@/components/Contact' 
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer' 
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Work />
         <WorkMob />
         <Contact />
+        <Footer />
       </main>
 
     </div>
