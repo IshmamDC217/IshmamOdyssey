@@ -37,7 +37,7 @@ const ContactMe = () => {
         <section className="contactme">
             <div className="container contactcontainer" style={{ padding: '9px' }}>
                 <h2 className="text-4xl font-bold text-center mb-6">Get in Touch</h2>
-                <p className="text-lg text-center mb-5">
+                <p className="text-lg text-center mb-5 text-white">
                     Have a question or want to collaborate? Feel free to reach out to me.
                 </p>
                 <div className="max-w-lg mx-auto">
@@ -54,7 +54,7 @@ const ContactMe = () => {
                         >
                             <input type="hidden" name="form-name" value="contact" />
                             <div className="mb-4">
-                                <label htmlFor="name" className="block text-lg font-semibold mb-2">
+                                <label htmlFor="name" className="block text-lg font-semibold mb-2 text-white">
                                     <i className="fas fa-user"></i> Name
                                 </label>
                                 <input
@@ -68,7 +68,7 @@ const ContactMe = () => {
                                 />
                             </div>
                             <div className="mb-4">
-                                <label htmlFor="email" className="block text-lg font-semibold mb-2">
+                                <label htmlFor="email" className="block text-lg font-semibold mb-2 text-white">
                                     Email
                                 </label>
                                 <input
@@ -82,7 +82,7 @@ const ContactMe = () => {
                                 />
                             </div>
                             <div className="mb-4">
-                                <label htmlFor="message" className="block text-lg font-semibold mb-2">
+                                <label htmlFor="message" className="block text-lg font-semibold mb-2 text-white">
                                     Message
                                 </label>
                                 <textarea
