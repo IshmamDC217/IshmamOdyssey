@@ -1,6 +1,8 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
+import { SiGmail, SiLinkedin } from 'react-icons/si';
+import { AiFillGithub } from 'react-icons/ai';
 
 interface FormData {
     name: string;
@@ -61,6 +63,17 @@ const ContactMe: React.FC = () => {
                 <p className="text-lg text-center mb-5 text-white">
                     Have a question or want to collaborate? Feel free to reach out to me.
                 </p>
+                <motion.div className="media-icons flex mb-5 justify-center">
+                    <a href="mailto:ishmam.ahmed24@gmail.com" rel="noopener noreferrer" className="mr-6">
+                        <SiGmail className="text-3xl" style={{ color: '#ffffff' }} />
+                    </a>
+                    <a href="https://github.com/IshmamDC217" rel="noopener noreferrer" className="mr-6">
+                        <AiFillGithub className="text-3xl" style={{ color: '#ffffff' }} />
+                    </a>
+                    <a href="https://www.linkedin.com/in/ishmam-ahmed-689b0998/" rel="noopener noreferrer" className="mr-6">
+                        <SiLinkedin className="text-3xl" style={{ color: '#ffffff' }} />
+                    </a>
+                </motion.div>
                 <div className="max-w-lg mx-auto">
                     {isSubmitted ? (
                         <p className="text-green-500 text-lg font-semibold mb-4">
