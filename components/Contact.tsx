@@ -1,15 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from 'emailjs-com';
 
-const ContactMe = () => {
-    const [formData, setFormData] = useState({
+interface FormData {
+    name: string;
+    email: string;
+    message: string;
+}
+
+const ContactMe: React.FC = () => {
+    const [formData, setFormData] = useState<FormData>({
         name: '',
         email: '',
         message: '',
     });
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
+    const handleChange = (
+        e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({
             ...prevData,
@@ -17,10 +26,25 @@ const ContactMe = () => {
         }));
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const submittedFormData = new FormData(e.currentTarget);
-        // Rest of the form submission logic
+
+        emailjs
+            .sendForm(
+                'service_o9qwf07',
+                'template_8x1x04a',
+                e.currentTarget,
+                'Ishmam Ahmed'
+            )
+            .then((result) => {
+                // Handle success
+                console.log(result.text);
+                setIsSubmitted(true);
+            })
+            .catch((error) => {
+                // Handle error
+                console.error(error.text);
+            });
 
         // Clear form data
         setFormData({
@@ -28,9 +52,6 @@ const ContactMe = () => {
             email: '',
             message: '',
         });
-
-        // Set submission status to true
-        setIsSubmitted(true);
     };
 
     return (
@@ -46,15 +67,13 @@ const ContactMe = () => {
                             Thank you for your message! I'll get back to you soon.
                         </p>
                     ) : (
-                        <form
-                            name="contact"
-                            method="POST"
-                            data-netlify="true"
-                            onSubmit={handleSubmit}
-                        >
-                            <input type="hidden" name="form-name" value="contact" />
+                        <form onSubmit={handleSubmit}>
+                            <input type="hidden" name="form_name" value="contact" />
                             <div className="mb-4">
-                                <label htmlFor="name" className="block text-lg font-semibold mb-2 text-white">
+                                <label
+                                    htmlFor="name"
+                                    className="block text-lg font-semibold mb-2 text-white"
+                                >
                                     <i className="fas fa-user"></i> Name
                                 </label>
                                 <input
@@ -68,7 +87,10 @@ const ContactMe = () => {
                                 />
                             </div>
                             <div className="mb-4">
-                                <label htmlFor="email" className="block text-lg font-semibold mb-2 text-white">
+                                <label
+                                    htmlFor="email"
+                                    className="block text-lg font-semibold mb-2 text-white"
+                                >
                                     Email
                                 </label>
                                 <input
@@ -82,7 +104,10 @@ const ContactMe = () => {
                                 />
                             </div>
                             <div className="mb-4">
-                                <label htmlFor="message" className="block text-lg font-semibold mb-2 text-white">
+                                <label
+                                    htmlFor="message"
+                                    className="block text-lg font-semibold mb-2 text-white"
+                                >
                                     Message
                                 </label>
                                 <textarea
@@ -112,4 +137,3 @@ const ContactMe = () => {
 };
 
 export default ContactMe;
-
