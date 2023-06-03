@@ -2,8 +2,12 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import mainish from '../public/mainish.png';
 import { motion } from 'framer-motion';
-import 'atropos/css'
-
+import { AiFillInstagram } from 'react-icons/ai';
+import { SiGmail, SiLinkedin } from 'react-icons/si';
+import { AiFillFacebook } from 'react-icons/ai';
+import { AiFillGithub } from 'react-icons/ai';
+import { FaSpotify } from 'react-icons/fa';
+import 'atropos/css';
 
 const Homepage = () => {
   return (
@@ -18,6 +22,17 @@ const Homepage = () => {
           >
             <h2 className="text-3xl md:text-4xl mb-3 font-semibold">Hi there, I'm</h2>
             <h1 className="text-4xl md:text-5xl mb-5 text-orange-300 font-bold">Ishmam Ahmed</h1>
+            <motion.div className="media-icons flex mb-5">
+              <a href="mailto:ishmam.ahmed24@gmail.com" rel="noopener noreferrer" className="mr-6">
+                <SiGmail className="text-3xl" style={{ color: '#c4302b' }} />
+              </a>
+              <a href="https://github.com/IshmamDC217" rel="noopener noreferrer" className="mr-6">
+                <AiFillGithub className="text-3xl" style={{ color: '#ffffff' }} />
+              </a>
+              <a href="https://www.linkedin.com/in/ishmam-ahmed-689b0998/" rel="noopener noreferrer" className="mr-6">
+                <SiLinkedin className="text-3xl" style={{ color: '#3b5998' }} />
+              </a>
+            </motion.div>
             <h4 className="text-lg md:text-2xl text-gray-400 mb-5">
               <Typewriter
                 options={{
@@ -31,9 +46,13 @@ const Homepage = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className='text-sm md:text-base max-w-[500px] text-white'
+              className="text-sm md:text-base max-w-[500px] text-white"
             >
-              As a dedicated <strong className='font-bold'>Software Engineer</strong>, I am currently pursuing a postgraduate degree in <strong className='font-bold'>Artificial Intelligence</strong> from the <strong className='font-bold'>University of Leeds</strong> with a strong focus on <strong className='font-bold'>Web Development</strong>, <strong className='font-bold'>Mobile Applications</strong>, and <strong className='font-bold'>AI</strong>.
+              As a dedicated <strong className="font-bold">Software Engineer</strong>, I am currently pursuing a
+              postgraduate degree in <strong className="font-bold">Artificial Intelligence</strong> from the{' '}
+              <strong className="font-bold">University of Leeds</strong> with a strong focus on{' '}
+              <strong className="font-bold">Web Development</strong>, <strong className="font-bold">Mobile Applications</strong>, and{' '}
+              <strong className="font-bold">AI</strong>.
             </motion.p>
           </motion.div>
         </div>
@@ -50,8 +69,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <div className="mx-auto">
-          </div>
+          <div className="mx-auto"></div>
         </div>
       </div>
     </section>
@@ -59,3 +77,4 @@ const Homepage = () => {
 };
 
 export default Homepage;
+
