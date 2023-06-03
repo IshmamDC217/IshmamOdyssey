@@ -2,25 +2,22 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import mainish from '../public/mainish.png';
 import { motion } from 'framer-motion';
-import { AiFillInstagram } from 'react-icons/ai';
 import { SiGmail, SiLinkedin } from 'react-icons/si';
-import { AiFillFacebook } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
-import { FaSpotify } from 'react-icons/fa';
 import 'atropos/css';
 
 const Homepage = () => {
   return (
     <section className="homepage">
       <div className="relative h-screen grid grid-cols-2">
-        <div className="flex flex-col md:flex-row md:justify-between min-h-screen">
+        <div className="flex flex-col md:flex-row md:justify-between min-h-screen ml-6">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-10 md:mt-60"
+            className="mb-10 md:mt-48"
           >
-            <h2 className="text-3xl md:text-4xl mb-3 font-semibold">Hi there, I'm</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold">Hi there, I'm</h2>
             <h1 className="text-4xl md:text-5xl mb-5 text-orange-300 font-bold">Ishmam Ahmed</h1>
             <motion.div className="media-icons flex mb-5">
               <a href="mailto:ishmam.ahmed24@gmail.com" rel="noopener noreferrer" className="mr-6">
