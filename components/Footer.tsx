@@ -3,7 +3,7 @@ import { RiEarthFill } from 'react-icons/ri';
 
 const Footer = () => {
     return (
-        <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4 p-2">
+        <footer className="rounded-lg shadow bg-gray-900 m-4 p-2 border border-gray-600">
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <a href="#" className="flex items-center mb-4 sm:mb-0">

@@ -56,7 +56,7 @@ const Work: FunctionComponent = () => {
 
   return (
     <section className="work">
-      <div className='glass-container' style={{ padding: '15px' }}>
+      <div className='glass-container border border-gray-900' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={metoralogo.src} className='w-[80px] mb-5 ' />
@@ -113,7 +113,7 @@ const Work: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className='glass-container2 rounded-lg my-20' style={{ padding: '15px' }}>
+      <div className='glass-container2 rounded-lg my-20 border border-gray-500' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={lock192.src} className='w-[100px] mb-5 border rounded-full' />
@@ -174,7 +174,7 @@ const Work: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className='glass-container2 rounded-lg' style={{ padding: '15px' }}>
+      <div className='glass-container2 rounded-lg border border-gray-500' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={gollogo.src} className='w-[90px] mb-5' />
