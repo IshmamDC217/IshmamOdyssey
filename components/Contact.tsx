@@ -30,7 +30,7 @@ const ContactMe: React.FC = () => {
                     </a>
                 </motion.div>
                 {isSubmitted ? (
-                    <p className="text-green-500 text-lg font-semibold mb-4">
+                    <p className="text-green-500 text-lg font-semibold mb-4 text-center">
                         Thank you for your message! I'll get back to you soon.
                     </p>
                 ) : (
