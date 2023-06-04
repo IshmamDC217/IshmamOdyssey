@@ -40,6 +40,7 @@ const ContactMe: React.FC = () => {
                         data-netlify="true"
                         onSubmit={handleSubmit}>
                         <div className="flex flex-col mb-4">
+                            <input type="hidden" name="form-name" value="contact" />
                             <label htmlFor="name" className="text-white">
                                 Name
                             </label>
