@@ -2,22 +2,13 @@ import React, { useState, FormEvent } from 'react';
 import { motion } from 'framer-motion';
 import { SiGmail, SiLinkedin } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
-import emailjs from 'emailjs-com';
 
 const ContactMe: React.FC = () => {
     const [isSubmitted, setIsSubmitted] = useState(false);
 
-    const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-
-        emailjs.sendForm('service_ycg97wl', 'service_ycg97wl', e.currentTarget, 'C8eJ23jZHxa1XTy_s')
-            .then((result) => {
-                console.log(result.text);
-                setIsSubmitted(true);
-            })
-            .catch((error) => {
-                console.log(error.text);
-            });
+        setIsSubmitted(true);
     };
 
     return (
@@ -43,7 +34,11 @@ const ContactMe: React.FC = () => {
                         Thank you for your message! I'll get back to you soon.
                     </p>
                 ) : (
-                    <form onSubmit={sendEmail}>
+                    <form
+                        name="contact"
+                        method="POST"
+                        data-netlify="true"
+                        onSubmit={handleSubmit}>
                         <div className="flex flex-col mb-4">
                             <label htmlFor="name" className="text-white">
                                 Name
@@ -52,7 +47,7 @@ const ContactMe: React.FC = () => {
                                 type="text"
                                 id="name"
                                 name="name"
-                                className="border rounded-md py-2 px-3"
+                                className="border rounded-md py-2 px-3 text-black"
                                 required
                             />
                         </div>
@@ -64,7 +59,7 @@ const ContactMe: React.FC = () => {
                                 type="email"
                                 id="email"
                                 name="email"
-                                className="border rounded-md py-2 px-3"
+                                className="border rounded-md py-2 px-3 text-black"
                                 required
                             />
                         </div>
@@ -76,7 +71,7 @@ const ContactMe: React.FC = () => {
                                 id="message"
                                 name="message"
                                 rows={4}
-                                className="border rounded-md py-2 px-3"
+                                className="border rounded-md py-2 px-3 text-black"
                                 required
                             ></textarea>
                         </div>
