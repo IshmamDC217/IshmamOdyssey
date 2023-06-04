@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { RiEarthFill } from 'react-icons/ri';
-import { GiFire } from 'react-icons/gi';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Sidebar from './Sidebar';
 import { BsHouseDoorFill } from 'react-icons/bs';
