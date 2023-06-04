@@ -21,14 +21,14 @@ const Homepage = () => {
             >
               <div>
                 <h2 className="text-4xl mb-5">Hi there, I'm </h2>
-                <h1 className="text-5xl mb-5 text-orange-300">
+                <h1 className="text-5xl text-orange-300">
                   Ishmam Ahmed
                 </h1>
                 <motion.p
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className='pfbio max-w-[500px] mb-20 mx-auto p-8 text-white'
+                  className='pfbio max-w-[500px] mb-12 mx-auto p-8 text-white'
                 >
                   As a dedicated <strong className='font-bold'>Software Engineer</strong>, I am currently pursuing a postgraduate degree in <strong className='font-bold'>Artificial Intelligence</strong> from the <strong className='font-bold'>University of Leeds</strong> with a strong focus on <strong className='font-bold'>Web Development</strong>, <strong className='font-bold'>Mobile Applications</strong>, and <strong className='font-bold'>AI</strong>.
                 </motion.p>
