@@ -239,6 +239,13 @@ section {
   background-size: cover;
 }
 
+.footer {
+  background-image: url('./backdrop/footer.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 25vh;
+}
+
 @media (min-width: 760px) {
   .workmob {
     display: none;
@@ -321,3 +328,5 @@ section {
     display: none;
   }
 }
+
+
