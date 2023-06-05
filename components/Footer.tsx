@@ -3,7 +3,7 @@ import { RiEarthFill } from 'react-icons/ri';
 
 const Footer = () => {
     return (
-        <section className='footer'>
+        <div className='footer'>
             <footer className="rounded-lg shadow bg-gray-900 m-4 p-2 border border-gray-600">
                 <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                     <div className="sm:flex sm:items-center sm:justify-between">
@@ -24,7 +24,9 @@ const Footer = () => {
                     <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400"> &copy; 2023 <a href="https://ishmamahmed.netlify.app/" className="hover:underline">Ishmam™</a>. All Rights Reserved.</span>
                 </div>
             </footer>
-        </section>
+        </div>
+
+
     )
 }
 

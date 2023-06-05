@@ -243,7 +243,9 @@ section {
   background-image: url('./backdrop/footer.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 25vh;
+  background-color: black;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 @media (min-width: 760px) {
