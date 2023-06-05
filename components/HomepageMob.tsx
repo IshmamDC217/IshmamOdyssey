@@ -20,8 +20,8 @@ const Homepage = () => {
               transition={{ duration: 0.8 }}
             >
               <div>
-                <h2 className="text-4xl mb-5">Hi there, I'm </h2>
-                <h1 className="text-5xl text-orange-300">
+                <h2 className="text-3xl mb-5">Hi there, I'm </h2>
+                <h1 className="text-4xl font-bold text-orange-300">
                   Ishmam Ahmed
                 </h1>
                 <motion.p
