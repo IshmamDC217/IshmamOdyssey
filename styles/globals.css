@@ -237,7 +237,6 @@ section {
   background-image: url('./backdrop/homepagemob.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  font-size: small;
 }
 
 @media (min-width: 760px) {
