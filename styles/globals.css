@@ -369,3 +369,17 @@ section {
 .close-button:hover {
   color: #555;
 }
+
+.toast-style {
+  background-color: rgba(15, 6, 52, 0.356) !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.toast-body {
+  font-size: 16px;
+}
+
+.toast-progress {
+  background: #ef707b !important;
+}
