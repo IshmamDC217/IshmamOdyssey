@@ -5,8 +5,29 @@ import { motion } from 'framer-motion';
 import { SiGmail, SiLinkedin } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
 import 'atropos/css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useEffect } from 'react';
+
 
 const Homepage = () => {
+
+  useEffect(() => {
+    const showToast = () => {
+      const toastId = 'welcome-toast'; // Unique ID for the toast message
+      toast.dark('✸ Welcome to My Odyssey!', {
+        toastId: toastId,
+        className: 'toast-style',
+        bodyClassName: 'toast-body',
+        progressClassName: 'toast-progress',
+        position: 'bottom-right'
+      });
+    };
+
+    showToast();
+  }, []);
+
+
   return (
     <section className="homepage">
       <div className="relative h-screen grid grid-cols-2">
@@ -68,6 +89,7 @@ const Homepage = () => {
         <div className="flex items-center justify-center">
           <div className="mx-auto"></div>
         </div>
+        <ToastContainer />
       </div>
     </section>
   );

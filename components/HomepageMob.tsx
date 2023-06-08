@@ -1,14 +1,11 @@
 import React from 'react';
-import Typewriter from 'typewriter-effect';
 import mainishupd from '../public/mainishupd.png';
-import cooltree from '../public/cooltree.png';
-import camel from '../public/camel.png';
 import { motion } from 'framer-motion';
 
 import 'atropos/css'
 import Atropos from 'atropos/react';
 
-const Homepage = () => {
+const HomepageMob = () => {
   return (
     <section className="homepagemob">
       <div className="relative h-screen mt-10">
@@ -53,4 +50,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomepageMob;
