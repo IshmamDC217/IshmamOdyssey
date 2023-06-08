@@ -62,7 +62,7 @@ const Navigation = () => {
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                 <a
                   href="https://metoracliffs.netlify.app"
-                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-white hover:bg-gray-700"
+                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-black hover:bg-gray-700"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="menuitem"
@@ -71,7 +71,7 @@ const Navigation = () => {
                 </a>
                 <a
                   href="https://cryptichat.benmitchell.dev/"
-                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-white hover:bg-gray-700"
+                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-black hover:bg-gray-700"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="menuitem"
@@ -80,7 +80,7 @@ const Navigation = () => {
                 </a>
                 <a
                   href="https://comp5400-game-of-life.netlify.app/"
-                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-white hover:bg-gray-700"
+                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-black hover:bg-gray-700"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="menuitem"
