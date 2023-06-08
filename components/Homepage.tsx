@@ -1,6 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import mainish from '../public/mainish.png';
+import mainIsh2 from '../public/mainIsh2.png';
 import { motion } from 'framer-motion';
 import { SiGmail, SiLinkedin } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
@@ -59,7 +59,7 @@ const Homepage = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              src={mainish.src}
+              src={mainIsh2.src}
               alt="Ishmam Ahmed"
               className="w-[600px] border rounded-full"
             />
