@@ -58,11 +58,11 @@ const Navigation = () => {
                 ></path>
               </svg>
             </button>
-            <div className={`origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 bg-gray-800 ${isDropdownOpen ? 'block' : 'hidden'}`} style={{ zIndex: 10 }}>
+            <div className={`origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-slate-800 ring-1 ring-black ring-opacity-5 bg-gray-800 ${isDropdownOpen ? 'block' : 'hidden'}`} style={{ zIndex: 10 }}>
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                 <a
                   href="https://metoracliffs.netlify.app"
-                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-black hover:bg-gray-700"
+                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-white hover:bg-gray-700"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="menuitem"
@@ -71,7 +71,7 @@ const Navigation = () => {
                 </a>
                 <a
                   href="https://cryptichat.benmitchell.dev/"
-                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-black hover:bg-gray-700"
+                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-white hover:bg-gray-700"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="menuitem"
@@ -80,7 +80,7 @@ const Navigation = () => {
                 </a>
                 <a
                   href="https://comp5400-game-of-life.netlify.app/"
-                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-black hover:bg-gray-700"
+                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-white hover:bg-gray-700"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="menuitem"
