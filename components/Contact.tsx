@@ -11,7 +11,7 @@ const ContactMe: React.FC = () => {
                 <p className="text-lg text-center mb-5 text-white">
                     Have a question or want to collaborate? Feel free to reach out to me.
                 </p>
-                <motion.div className="media-icons flex mb-5 justify-center">
+                <motion.div className="media-icons flex mb-5 ml-6 justify-center">
                     <a href="mailto:ishmam.ahmed24@gmail.com" rel="noopener noreferrer" className="mr-6">
                         <SiGmail className="text-3xl" style={{ color: '#ffffff' }} />
                     </a>
