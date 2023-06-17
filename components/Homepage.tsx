@@ -1,6 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import mainishupd from '../public/mainishupd.png';
+import mainMeUpd3 from '../public/mainMeUpd3.png';
 import { motion } from 'framer-motion';
 import { SiGmail, SiLinkedin } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
@@ -80,7 +80,7 @@ const Homepage = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              src={mainishupd.src}
+              src={mainMeUpd3.src}
               alt="Ishmam Ahmed"
               className="w-[600px] border rounded-full"
             />
