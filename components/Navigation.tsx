@@ -36,7 +36,7 @@ const Navigation = () => {
 
       <div className="hidden md:flex items-center">
         <div className="ml-10 flex items-baseline space-x-4">
-          <a href="#" className="text-gray-300 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium flex items-center" aria-current="page"><BsHouseDoorFill className="w-5 h-5 mr-2 text-orange-700 text-orange-500" />
+          <a href="/" className="text-gray-300 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium flex items-center" aria-current="page"><BsHouseDoorFill className="w-5 h-5 mr-2 text-orange-700 text-orange-500" />
             Home</a>
           <div className="relative mt-2">
             <button
