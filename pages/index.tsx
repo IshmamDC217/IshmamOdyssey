@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import Navigation from '@/components/Navigation'
 import Homepage from '@/components/Homepage' 
 import HomepageMob from '@/components/HomepageMob' 
@@ -14,7 +12,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Ishmam Ahmed</title>
-        <link rel="icon" href="/" />
+        <link rel="icon" href="/favicon.ico" />
 
       </Head>
 
