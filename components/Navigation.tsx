@@ -21,7 +21,7 @@ const Navigation = () => {
   return (
     <nav className="bg-gray-900 shadow px-4 md:px-24 lg:px-80 py-3 flex justify-between items-center relative">
       <div className="flex items-center">
-        <img src={ishlogonewv1.src} className='h-8' />
+        <img src={ishlogonewv1.src} className='h-8 mt-1' />
         {/* <RiEarthFill className="w-8 h-8 mr-3 text-orange-700" /> */}
         <a href="#" className="text-2xl font-semibold text-white mx-2">My Odyssey</a>
       </div>
@@ -30,7 +30,7 @@ const Navigation = () => {
           onClick={toggleSidebar}
           className="text-gray-700 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500"
         >
-          {sidebarOpen ? <FaTimes className="w-1 h-1 text-gray-900" /> : <FaBars className="w-6 h-6 mt-1 text-orange-700" />}
+          {sidebarOpen ? <FaTimes className="w-1 h-1 text-gray-900" /> : <FaBars className="w-6 h-6 mt-2 text-orange-700" />}
         </button>
       </div>
 
