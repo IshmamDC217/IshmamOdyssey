@@ -1,5 +1,5 @@
 import React from 'react';
-import mainishupd from '../public/mainishupd.png';
+import mainMeUpd3 from '../public/mainMeUpd3.jpg';
 import { motion } from 'framer-motion';
 
 import 'atropos/css'
@@ -39,7 +39,7 @@ const HomepageMob = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              src={mainishupd.src}
+              src={mainMeUpd3.src}
               alt="Ishmam Ahmed"
               className="mainDP w-80 mt-7 md:w-96 md:mt-10 border rounded-full"
             />
