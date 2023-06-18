@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ishlogonewv1 from '../public/ishlogonewv1.png'
 import { RiEarthFill } from 'react-icons/ri';
 
 const Footer = () => {
@@ -24,7 +25,8 @@ const Footer = () => {
                 <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <a href="#" className="flex items-center mb-4 sm:mb-0">
-                            <RiEarthFill className="w-8 h-8 mr-3 text-orange-700" />
+                            {/* <RiEarthFill className="w-8 h-8 mr-3 text-orange-700" /> */}
+                            <img src={ishlogonewv1.src} className='h-12' />
                             <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">My Odyssey</span>
                         </a>
                         <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">

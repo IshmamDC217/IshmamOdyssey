@@ -4,6 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import Sidebar from './Sidebar';
 import { BsHouseDoorFill } from 'react-icons/bs';
 import { RiComputerFill, RiContactsBook2Fill } from 'react-icons/ri';
+import ishlogonewv1 from '../public/ishlogonewv1.png'
 
 const Navigation = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -20,7 +21,8 @@ const Navigation = () => {
   return (
     <nav className="bg-gray-900 shadow px-4 md:px-24 lg:px-80 py-3 flex justify-between items-center relative">
       <div className="flex items-center">
-        <RiEarthFill className="w-8 h-8 mr-3 text-orange-700" />
+        <img src={ishlogonewv1.src} className='h-12' />
+        {/* <RiEarthFill className="w-8 h-8 mr-3 text-orange-700" /> */}
         <a href="#" className="text-2xl font-semibold text-white">My Odyssey</a>
       </div>
       <div className="md:hidden">
