@@ -94,7 +94,7 @@ const Navigation = () => {
           </div>
           <a
             href="/contact"
-            className="text-gray-300 hover:text-orange-500 px-3 py-2 rounded-md text-sm font-medium flex items-center"
+            className="text-gray-300 hover:text-orange-500 px-1 py-2 rounded-md text-sm font-medium flex items-center"
           >
             <RiContactsBook2Fill className="w-5 h-5 mr-2 text-orange-700" />
             Contact
