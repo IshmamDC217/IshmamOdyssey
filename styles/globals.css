@@ -153,6 +153,13 @@ section {
   padding: 0 2rem;
 }
 
+.golcontainer {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
 .work-item {
   position: relative;
   overflow: hidden;

@@ -36,7 +36,7 @@ const Work: FunctionComponent = () => {
     },
     {
       image: crypticchat2,
-      title: 'Metora Cliffs Web: About',
+      title: 'Cryptic Chat: Log In',
       link: 'https://cryptichat.benmitchell.dev/',
     },
   ];
@@ -44,12 +44,12 @@ const Work: FunctionComponent = () => {
   const goljs = [
     {
       image: golweb1,
-      title: 'Metora Cliffs Web: Homepage',
+      title: 'Game of Life Web: Homepage',
       link: 'https://comp5400-game-of-life.netlify.app/',
     },
     {
       image: golweb2,
-      title: 'Metora Cliffs Web: About',
+      title: 'Game of Life Web: Game',
       link: 'https://comp5400-game-of-life.netlify.app/',
     },
   ];
@@ -180,7 +180,7 @@ const Work: FunctionComponent = () => {
             <img src={gollogo.src} className='w-[90px] mb-5' />
             <h2 className="text-3xl font-bold mx-6 my-7">Conway's Game of Life - Javascript</h2>
           </div>
-          <div className="container rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#12121262', padding: '80px' }}>
+          <div className="golcontainer rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#12121262', padding: '80px' }}>
             {goljs.map((work, index) => (
               <motion.a
                 key={index}
