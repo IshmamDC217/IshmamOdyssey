@@ -21,9 +21,9 @@ const Navigation = () => {
   return (
     <nav className="bg-gray-900 shadow px-4 md:px-24 lg:px-80 py-3 flex justify-between items-center relative">
       <div className="flex items-center">
-        <img src={ishlogonewv1.src} className='h-12' />
+        <img src={ishlogonewv1.src} className='h-8' />
         {/* <RiEarthFill className="w-8 h-8 mr-3 text-orange-700" /> */}
-        <a href="#" className="text-2xl font-semibold text-white">My Odyssey</a>
+        <a href="#" className="text-2xl font-semibold text-white mx-2">My Odyssey</a>
       </div>
       <div className="md:hidden">
         <button
