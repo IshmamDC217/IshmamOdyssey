@@ -36,7 +36,7 @@ const Homepage = () => {
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-10 md:mt-48"
+            className="mb-10 md:mt-36"
           >
             <h2 className="text-3xl md:text-4xl font-semibold">Hi there, I'm</h2>
             <h1 className="text-4xl md:text-5xl mb-5 text-orange-300 font-bold">Ishmam Ahmed</h1>
@@ -64,13 +64,9 @@ const Homepage = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="text-sm md:text-base max-w-[500px] text-white"
+              className="text-xs md:text-base max-w-[500px] text-white"
             >
-              As a dedicated <strong className="font-bold">Software Engineer</strong>, I am currently pursuing a
-              postgraduate degree in <strong className="font-bold">Artificial Intelligence</strong> from the{' '}
-              <strong className="font-bold">University of Leeds</strong> with a strong focus on{' '}
-              <strong className="font-bold">Web Development</strong>, <strong className="font-bold">Mobile Applications</strong>, and{' '}
-              <strong className="font-bold">AI</strong>.
+              Allow me to introduce myself as a <b>software engineer</b> and <b>musician</b>. With a <b>BSc in Computer Science</b> and an <b>MEng in Artificial Intelligence</b>, I have a strong foundation in both technical problem-solving and innovative thinking. As a guitarist, I channel my creative passion through music. I work as a software engineer at <a href='https://www.hlrlookup.com' rel="noopener noreferrer" className='font-bold underline hover:text-orange-500'>HLR Lookup</a> in Leeds and play guitar for the progressive rock band, <a href='https://metoracliffs.netlify.app' rel="noopener noreferrer" className='font-bold underline hover:text-orange-500'>Metora Cliffs</a>. Blending my technical expertise and musical passion, I create captivating experiences at the intersection of technology and music.
             </motion.p>
           </motion.div>
         </div>
