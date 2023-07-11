@@ -41,7 +41,7 @@ const HomepageMob = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               src={mainMeUpd3.src}
               alt="Ishmam Ahmed"
-              className="mainDP w-80 md:w-96 md:mt-10 border rounded-full"
+              className="mainDP w-72 md:w-96 md:mt-10 border rounded-full"
             />
           </div>
         </div>
