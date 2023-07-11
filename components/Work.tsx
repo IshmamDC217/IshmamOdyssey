@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { useSpring, animated } from 'react-spring';
 import metoraweb1 from '../public/metoraweb1.png';
 import metoraweb2 from '../public/metoraweb2.png';
 import crypticchat1 from '../public/crypticchat1.png';
@@ -54,8 +55,10 @@ const Work: FunctionComponent = () => {
     },
   ];
 
+  const springProps = useSpring({ opacity: 1, from: { opacity: 0 } });
+
   return (
-    <section className="work">
+    <animated.section style={springProps} className="work">
       <div className='glass-container border border-gray-900' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
@@ -82,6 +85,11 @@ const Work: FunctionComponent = () => {
                     onLeave={() => console.log('Leave')}
                     onRotate={(x, y) => console.log('Rotate', x, y)}
                   >
+                    {index < 2 && (
+                      <div className="prompt-box">
+                        <p className="prompt-text">Click to explore</p>
+                      </div>
+                    )}
                     <motion.div
                       className="image-overlay"
                       whileHover={{ scale: 1.05 }}
@@ -139,6 +147,11 @@ const Work: FunctionComponent = () => {
                     onLeave={() => console.log('Leave')}
                     onRotate={(x, y) => console.log('Rotate', x, y)}
                   >
+                    {index < 2 && (
+                      <div className="prompt-box">
+                        <p className="prompt-text">Click to explore</p>
+                      </div>
+                    )}
                     <motion.div
                       className="image-overlay"
                       whileHover={{ scale: 1.05 }}
@@ -200,6 +213,11 @@ const Work: FunctionComponent = () => {
                     onLeave={() => console.log('Leave')}
                     onRotate={(x, y) => console.log('Rotate', x, y)}
                   >
+                    {index < 2 && (
+                      <div className="prompt-box">
+                        <p className="prompt-text">Click to explore</p>
+                      </div>
+                    )}
                     <motion.div
                       className="image-overlay"
                       whileHover={{ scale: 1.05 }}
@@ -211,6 +229,7 @@ const Work: FunctionComponent = () => {
               </motion.a>
             ))}
           </div>
+
         </div>
         <div className="project-description my-5 max-w-7xl">
           <Link
@@ -241,7 +260,7 @@ const Work: FunctionComponent = () => {
         </div>
 
       </div>
-    </section>
+    </animated.section>
   );
 };
 
