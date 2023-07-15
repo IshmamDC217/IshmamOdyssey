@@ -33,7 +33,7 @@ const HomepageMob = () => {
             </motion.div>
           </div>
         </div>
-        {/* <div className="flex items-center justify-center mb-20">
+        <div className="flex items-center justify-center mb-20">
           <div className="mx-auto">
             <motion.img
               initial={{ opacity: 0, y: 50 }}
@@ -44,7 +44,7 @@ const HomepageMob = () => {
               className="mainDP w-72 md:w-96 md:mt-10 border rounded-full"
             />
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );

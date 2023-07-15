@@ -240,6 +240,12 @@ section {
   }
 }
 
+@media (max-height: 700px) {
+  .mainDP {
+    width: 250px;
+  }
+}
+
 .homepagemob {
   background-image: url('./backdrop/homepagemob.svg');
   background-repeat: no-repeat;
