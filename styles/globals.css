@@ -207,6 +207,18 @@ section {
   object-fit: cover;
 }
 
+.mainglasscontainer{
+  background-color: rgba(0, 0, 0, 0.309);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+  width: 100%
+
+}
+
 .glass-container {
   background-color: rgba(0, 0, 0, 0.309);
   backdrop-filter: blur(10px);
@@ -220,6 +232,58 @@ section {
   border-radius: 10px;
   padding: 20px;
 }
+
+.glass-container3 {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hobby-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.hobby-img {
+  width: 30%;
+}
+
+.hobby-description {
+  width: 60%;
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.hobby-img {
+  animation: scale 3s ease-in-out infinite;
+}
+
+.glass-container3 {
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.glass-container3:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%)
+}
+
+
 
 .innerglasscontainer {
   background-color: rgba(229, 225, 225, 0.638);
@@ -243,6 +307,7 @@ section {
 @media (max-height: 700px) {
   .mainDP {
     width: 200px;
+    border: none;
   }
 }
 
@@ -385,7 +450,7 @@ section {
 
 .toast-style {
   background-color: rgba(15, 6, 52, 0.356) !important;
-  color: white !important;
+  color: rgba(255, 255, 255, 0.726) !important;
   font-weight: bold;
 }
 
@@ -415,4 +480,50 @@ section {
 
 .project-image:hover .prompt-box {
   opacity: 1;
+}
+
+/* About me */
+.about-me-content {
+  background: url('../public/about.svg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+.hobby-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 35%; /* Adjust this value to set the desired width for each hobby block */
+    margin: 2.5%;
+}
+
+.hobby h2 {
+    width: 100%;
+}
+
+.hobby-even .hobby-content-large, .hobby-odd .hobby-content-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.hobby-odd .hobby-content-large {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 376px) {
+  .about-page {
+    display: none;
+  }
 }
