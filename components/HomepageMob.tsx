@@ -2,9 +2,6 @@ import React from 'react';
 import mainMeUpd3 from '../public/mainMeUpd3.jpg';
 import { motion } from 'framer-motion';
 
-import 'atropos/css'
-import Atropos from 'atropos/react';
-
 const HomepageMob = () => {
   return (
     <section className="homepagemob">
@@ -41,7 +38,7 @@ const HomepageMob = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
               src={mainMeUpd3.src}
               alt="Ishmam Ahmed"
-              className="mainDP w-72 md:w-96 md:mt-10 border rounded-full"
+              className="mainDP w-72 md:w-96 md:mt-10 border rounded-full border-white bg-[#ffffffb9]"
             />
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { FunctionComponent } from 'react';
+import Heading from './Heading'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useSpring, animated } from 'react-spring';
@@ -59,6 +60,7 @@ const Work: FunctionComponent = () => {
 
   return (
     <animated.section style={springProps} className="work">
+      <Heading title='Projects'/>
       <div className='glass-container border border-gray-900' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
