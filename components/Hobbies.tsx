@@ -6,7 +6,8 @@ const Hobby = () => {
         <div className="about-page">
             <section className="about-me-content hobbies">
                 <Heading title='Hobbies'/>
-                <div className="hobby-grid text-2xl font-bold lg:w-[1800px]">
+                <div className="hobby-grid text-2xl font-bold w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
                 {[
                     { name: "guitar", displayName: "Music Composition", desc: "Music has always been a part of my life. I particularly love playing guitar and expressing my creativity through this musical instrument." },
                     { name: "programming", displayName: "Software and Web Development", desc: "As a software engineer, programming is not just my job but also a hobby that I enjoy. It's always thrilling to solve problems and build something from scratch." },
