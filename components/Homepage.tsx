@@ -52,7 +52,7 @@ const Homepage = () => {
             className="mb-10 md:mt-36"
           >
             <h2 className="text-3xl md:text-4xl font-semibold">Hi there, I'm</h2>
-            <animated.h1 style={fadeIn} className="text-4xl md:text-5xl mb-5 text-orange-300 font-bold">Ishmam Ahmed</animated.h1>
+            <animated.h1 style={fadeIn} className="text-4xl md:text-5xl mb-5 text-black font-bold">Ishmam Ahmed</animated.h1>
             <div className="media-icons flex mb-5">
               <animated.a style={bounce} href="mailto:ishmam.ahmed24@gmail.com" rel="noopener noreferrer" className="mr-6">
                 <SiGmail className="text-3xl" style={{ color: '#c4302b' }} />

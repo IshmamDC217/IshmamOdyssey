@@ -49,7 +49,7 @@ section {
 }
 
 .homepage {
-  background-image: url('./backdrop/homepage.svg');
+  background-image: url('../public/modernbackground.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

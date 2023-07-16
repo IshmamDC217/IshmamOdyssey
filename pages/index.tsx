@@ -14,6 +14,7 @@ export default function Home() {
       <Head>
         <title>Ishmam Ahmed</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://db.onlinewebfonts.com/c/dcf30970234b82fe7443bb097ed25a55?family=istanbul+Regular" rel="stylesheet"/>
 
       </Head>
 
