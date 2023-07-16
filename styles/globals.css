@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -48,6 +50,16 @@ section {
   min-height: 100vh;
 }
 
+.welcometitle {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+}
+
+.ishahm {
+  font-family: 'Pacifico', cursive;
+  font-size: 6em;
+}
+
 .homepage {
   background-image: url('../public/modernbackground.jpg');
   background-repeat: no-repeat;
@@ -72,6 +84,19 @@ section {
 
   .typewriters {
     display: none;
+  }
+}
+
+@media (max-width: 1430px) {
+  .ishahm {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 1430px) {
+  .ishahm {
+    font-size: 3em;
+    letter-spacing: 2px;
   }
 }
 
@@ -207,16 +232,14 @@ section {
   object-fit: cover;
 }
 
-.mainglasscontainer{
-  background-color: rgba(0, 0, 0, 0.309);
-  backdrop-filter: blur(10px);
+.mainglasscontainer {
+  background-color: rgba(28, 37, 53, 0.5);
   border-radius: 10px;
   display: grid;
   place-items: center;
   align-content: center;
   min-height: 100vh;
   width: 100%
-
 }
 
 .glass-container {
@@ -261,9 +284,12 @@ section {
 }
 
 @keyframes scale {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
@@ -283,13 +309,70 @@ section {
   filter: grayscale(0%)
 }
 
+.navbar {
+  background: linear-gradient(900deg, #272b3db6, #091b7242);
+}
 
+.footercont {
+  background: linear-gradient(900deg, #272b3db6, #091b7242);
+}
 
 .innerglasscontainer {
   background-color: rgba(229, 225, 225, 0.638);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
+}
+
+.bioglasscontainer {
+  background-color: rgba(30, 46, 59, 0.638);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 300px;
+  transition: all 0.3s ease;
+}
+
+.bioglasscontainer:hover {
+  transform: scale(1.05);
+}
+
+.mediaglasscontainer {
+  background-color: rgba(30, 46, 59, 0.638);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 180px;
+  transition: all 0.3s ease;
+}
+
+.mediaicons:hover {
+  scale: 1.1;
+}
+
+.mediaglasscontainer:hover {
+  transform: scale(1.1);
+}
+
+.typeglasscontainer {
+  background-color: rgba(30, 46, 59, 0.638);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 280px;
+  transition: all 0.3s ease;
+}
+
+.typeglasscontainer:hover {
+  transform: scale(1.1);
+}
+
+.introglasscontainer {
+  background-color: rgba(30, 46, 59, 0.638);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  max-width: 700px;
+  max-height: 700px;
 }
 
 @media (min-width: 760px) {
@@ -500,26 +583,28 @@ section {
 }
 
 .hobby {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 35%; /* Adjust this value to set the desired width for each hobby block */
-    margin: 2.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 35%;
+  /* Adjust this value to set the desired width for each hobby block */
+  margin: 2.5%;
 }
 
 .hobby h2 {
-    width: 100%;
+  width: 100%;
 }
 
-.hobby-even .hobby-content-large, .hobby-odd .hobby-content-large {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.hobby-even .hobby-content-large,
+.hobby-odd .hobby-content-large {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .hobby-odd .hobby-content-large {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 @media (max-width: 376px) {
