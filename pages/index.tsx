@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Ishmam Ahmed</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/prototypelogo.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
 
       </Head>

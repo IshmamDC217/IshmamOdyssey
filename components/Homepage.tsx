@@ -67,18 +67,20 @@ const Homepage = () => {
             <h4 className="typeglasscontainer border text-lg md:text-2xl text-white font-bold mb-5">
               <Typewriter
                 options={{
-                  strings: ['Welcome to my page!','Leeds Based', 'Software Engineer', 'Frontend Developer', 'Musician', 'Ui/Ux Designer'],
+                  strings: ['Welcome to my page!', 'Leeds Based', 'Software Engineer', 'Frontend Developer', 'Musician', 'Ui/Ux Designer'],
                   autoStart: true,
                   loop: true,
                 }}
               />
             </h4>
-            <animated.p
-              style={fadeIn}
-              className="bioglasscontainer text-xs md:text-sm border max-w-[700px] text-white txt"
-            >
-              Allow me to introduce myself as a <b>software engineer</b> and <b>musician</b>. With a <b>BSc in Computer Science</b> and an <b>MEng in Artificial Intelligence</b>, I have a strong foundation in both technical problem-solving and innovative thinking. As a guitarist, I channel my creative passion through music. I work as a software engineer at <a href='https://www.hlrlookup.com' rel="noopener noreferrer" className='font-bold underline hover:text-blue-400'>HLR Lookup</a> in Leeds and play guitar for the progressive rock band, <a href='https://metoracliffs.netlify.app' rel="noopener noreferrer" className='font-bold underline hover:text-blue-400'>Metora Cliffs</a>. Blending my technical expertise and musical passion, I create captivating experiences at the intersection of technology and music.
-            </animated.p>
+            <div>
+              <animated.p
+                style={fadeIn}
+                className="bioglasscontainer text-xs md:text-sm lg:text-lg border max-w-[700px] text-white txt"
+              >
+                Allow me to introduce myself as a <b>software engineer</b> and <b>musician</b>. With a <b>BSc in Computer Science</b> and an <b>MEng in Artificial Intelligence</b>, I have a strong foundation in both technical problem-solving and innovative thinking. As a guitarist, I channel my creative passion through music. I work as a software engineer at <a href='https://www.hlrlookup.com' rel="noopener noreferrer" className='font-bold underline hover:text-blue-400'>HLR Lookup</a> in Leeds and play guitar for the progressive rock band, <a href='https://metoracliffs.netlify.app' rel="noopener noreferrer" className='font-bold underline hover:text-blue-400'>Metora Cliffs</a>. Blending my technical expertise and musical passion, I create captivating experiences at the intersection of technology and music.
+              </animated.p>
+            </div>
           </animated.div>
         </div>
         <div className="flex items-center justify-center mb-60">

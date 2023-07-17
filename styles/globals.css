@@ -52,6 +52,7 @@ section {
 
 .welcometitle {
   font-family: 'Pacifico', cursive;
+  letter-spacing: 2px;
   font-size: 2em;
 }
 
@@ -273,6 +274,8 @@ section {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.309); */
+
 }
 
 .hobby-img {
@@ -329,8 +332,14 @@ section {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
-  max-height: 300px;
+  max-height: 400px;
   transition: all 0.3s ease;
+}
+
+@media (min-width: 1170) {
+  .bioglasscontainer {
+    display: none;
+  }
 }
 
 .bioglasscontainer:hover {
@@ -567,7 +576,7 @@ section {
 
 /* About me */
 .about-me-content {
-  background: url('../public/about.svg');
+  background: url('../public/hobbybg.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -580,6 +589,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.309);
+
 }
 
 .hobby {
