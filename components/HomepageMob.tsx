@@ -45,18 +45,19 @@ const HomepageMob = () => {
         <div className="flex items-center justify-center mb-20">
           {showGif && (
             <img
+              className='spinny'
               src={coolpurp.src}
               alt="Background Gif"
-              style={{ position: 'absolute', zIndex: 1, width: '70%', height: '40%' }}
+              style={{ position: 'absolute', zIndex: 1, width: '80%', height: '40%' }}
             />
           )}
           <motion.img
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 0.9 }}
             src={mainishdpnew.src}
             alt="Ishmam Ahmed"
-            className="mainDP w-72 md:w-96 md:mt-10 border rounded-full border-white bg-[#ffffffb9]"
+            className="mainDP w-64 md:w-96 md:mt-10 border rounded-full border-white bg-[#ffffffb9]"
             style={{ position: 'relative', zIndex: 2 }}
           />
         </div>
