@@ -36,7 +36,7 @@ const HomepageMob = () => {
           <img
             src={coolpurp.src}
             alt="Background Gif"
-            style={{ position: 'absolute', zIndex: 1, width: '85%', height: '40%' }}
+            style={{ position: 'absolute', zIndex: 1, width: '60%', height: '40%' }}
           />
           <motion.img
             initial={{ opacity: 0, y: 50 }}
