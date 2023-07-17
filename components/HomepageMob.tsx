@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import mainMeUpd3 from '../public/mainMeUpd3.jpg';
 import { motion } from 'framer-motion';
 import mainishdpnew from '../public/mainishdpnew.png';
 import coolpurp from '../public/coolpurp.gif';
 
 const HomepageMob = () => {
+  const [showGif, setShowGif] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowGif(true);
+    }, 1000); // Delay in milliseconds
+
+    return () => clearTimeout(timer); // This will clear the timer when the component unmounts
+  }, []);
+
   return (
     <section className="homepagemob">
       <div className="relative h-screen mt-10">
@@ -33,11 +43,13 @@ const HomepageMob = () => {
           </div>
         </div>
         <div className="flex items-center justify-center mb-20">
-          <img
-            src={coolpurp.src}
-            alt="Background Gif"
-            style={{ position: 'absolute', zIndex: 1, width: '60%', height: '40%' }}
-          />
+          {showGif && (
+            <img
+              src={coolpurp.src}
+              alt="Background Gif"
+              style={{ position: 'absolute', zIndex: 1, width: '60%', height: '40%' }}
+            />
+          )}
           <motion.img
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
