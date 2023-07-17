@@ -25,7 +25,7 @@ const HomepageMob = () => {
       };
     }, []);
   
-    const gifWidth = windowWidth > 388 ? '80%' : '60%';
+    const gifWidth = windowWidth > 380 ? '60%' : '80%';
 
   return (
     <section className="homepagemob">
