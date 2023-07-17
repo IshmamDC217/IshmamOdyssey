@@ -6,7 +6,7 @@ import coolpurp from '../public/coolpurp.gif';
 
 const HomepageMob = () => {
     const [showGif, setShowGif] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
   
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
