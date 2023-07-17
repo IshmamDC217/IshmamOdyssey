@@ -5,15 +5,27 @@ import mainishdpnew from '../public/mainishdpnew.png';
 import coolpurp from '../public/coolpurp.gif';
 
 const HomepageMob = () => {
-  const [showGif, setShowGif] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowGif(true);
-    }, 1000); // Delay in milliseconds
-
-    return () => clearTimeout(timer); // This will clear the timer when the component unmounts
-  }, []);
+    const [showGif, setShowGif] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+  
+    useEffect(() => {
+      window.addEventListener('resize', handleResize);
+  
+      const timer = setTimeout(() => {
+        setShowGif(true);
+      }, 1000); // Delay in milliseconds
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+        clearTimeout(timer); // This will clear the timer when the component unmounts
+      };
+    }, []);
+  
+    const gifWidth = windowWidth > 768 ? '80%' : '60%';
 
   return (
     <section className="homepagemob">
@@ -48,7 +60,7 @@ const HomepageMob = () => {
               className='spinny'
               src={coolpurp.src}
               alt="Background Gif"
-              style={{ position: 'absolute', zIndex: 1, width: '80%', height: '40%' }}
+              style={{ position: 'absolute', zIndex: 1, width: gifWidth, height: '40%' }}
             />
           )}
           <motion.img
