@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/bluu-next');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -52,22 +53,23 @@ section {
 }
 
 .welcometitle {
-  font-family: 'Pacifico', cursive;
-  letter-spacing: 4px;
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Bluu Next', sans-serif;
   font-size: 2em;
 }
 
 .heading {
-  font-family: 'Caladea', serif;
+  font-family: 'Bluu Next', sans-serif;
   font-size: 4em;
 }
 
 .ody {
-  font-family: 'Caladea', serif;
+  font-family: 'Bluu Next', sans-serif;
 }
 
 .ishahm {
-  font-family: 'Pacifico', cursive;
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Bluu Next', sans-serif;
   font-size: 6em;
 }
 
