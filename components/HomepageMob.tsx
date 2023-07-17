@@ -1,6 +1,8 @@
 import React from 'react';
 import mainMeUpd3 from '../public/mainMeUpd3.jpg';
 import { motion } from 'framer-motion';
+import mainishdpnew from '../public/mainishdpnew.png';
+import coolpurp from '../public/coolpurp.gif';
 
 const HomepageMob = () => {
   return (
@@ -14,8 +16,8 @@ const HomepageMob = () => {
               transition={{ duration: 0.8 }}
             >
               <div>
-                <h2 className="text-3xl">Hi there, I'm </h2>
-                <h1 className="text-4xl font-bold text-orange-300">
+                <h2 className="text-3xl mb-3">Hi there, I'm </h2>
+                <h1 className="ishahm mb-3 text-4xl font-bold text-blue-300">
                   Ishmam Ahmed
                 </h1>
                 <motion.p
@@ -24,23 +26,27 @@ const HomepageMob = () => {
                   transition={{ duration: 0.8, delay: 0.3 }}
                   className='pfbio max-w-[500px] mb-12 mx-auto p-4 py-2 text-white'
                 >
-                  Allow me to introduce myself as a <b>software engineer</b> and <b>musician</b>. With a <b>BSc in Computer Science</b> and an <b>MEng in Artificial Intelligence</b>, I have a strong foundation in both technical problem-solving and innovative thinking. As a guitarist, I channel my creative passion through music. I work as a software engineer at <a href='https://www.hlrlookup.com' rel="noopener noreferrer" className='font-bold text-orange-500'>HLR Lookup</a> in Leeds and play guitar for the progressive rock band, <a href='https://metoracliffs.netlify.app' rel="noopener noreferrer" className='font-bold text-orange-500'>Metora Cliffs</a>. Blending my technical expertise and musical passion, I create captivating experiences at the intersection of technology and music.
+                  Allow me to introduce myself as a <b>software engineer</b> and <b>musician</b>. With a <b>BSc in Computer Science</b> and an <b>MEng in Artificial Intelligence</b>, I have a strong foundation in both technical problem-solving and innovative thinking. As a guitarist, I channel my creative passion through music. I work as a software engineer at <a href='https://www.hlrlookup.com' rel="noopener noreferrer" className='font-bold text-blue-300'>HLR Lookup</a> in Leeds and play guitar for the progressive rock band, <a href='https://metoracliffs.netlify.app' rel="noopener noreferrer" className='font-bold text-blue-300'>Metora Cliffs</a>. Blending my technical expertise and musical passion, I create captivating experiences at the intersection of technology and music.
                 </motion.p>
               </div>
             </motion.div>
           </div>
         </div>
         <div className="flex items-center justify-center mb-20">
-          <div className="mx-auto">
-            <motion.img
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              src={mainMeUpd3.src}
-              alt="Ishmam Ahmed"
-              className="mainDP w-72 md:w-96 md:mt-10 border rounded-full border-white bg-[#ffffffb9]"
-            />
-          </div>
+          <img
+            src={coolpurp.src}
+            alt="Background Gif"
+            style={{ position: 'absolute', zIndex: 1, width: '85%', height: '40%' }}
+          />
+          <motion.img
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            src={mainishdpnew.src}
+            alt="Ishmam Ahmed"
+            className="mainDP w-72 md:w-96 md:mt-10 border rounded-full border-white bg-[#ffffffb9]"
+            style={{ position: 'relative', zIndex: 2 }}
+          />
         </div>
       </div>
     </section>

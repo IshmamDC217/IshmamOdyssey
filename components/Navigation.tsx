@@ -24,7 +24,7 @@ const Navigation = () => {
       <div className="flex items-center lg:mt-1">
         <img src={prototypelogo.src} className='h-14 w-14' />
         {/* <RiEarthFill className="w-8 h-8 mr-3 text-blue-700" /> */}
-        <a href="#" className="text-2xl font-semibold text-white mx-2">My Odyssey</a>
+        <a href="#" className="ody text-2xl font-semibold text-white mx-2">My Odyssey</a>
       </div>
       <div className="md:hidden">
         <button

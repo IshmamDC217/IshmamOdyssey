@@ -25,19 +25,19 @@ const Sidebar: React.FC<SidebarProps> = ({ sidebarOpen, toggleSidebar }) => {
                     {/* Add your mobile menu options here */}
                     <li>
                         <a href="/" className="flex items-center">
-                            <BsHouseDoorFill className="w-5 h-5 mr-2 text-orange-700 dark:text-orange-500" />
+                            <BsHouseDoorFill className="w-5 h-5 mr-2 text-blue-700 dark:text-blue-500" />
                             Home
                         </a>
                     </li>
                     <li>
                         <a href="/work" className="flex items-center">
-                            <RiComputerFill className="w-5 h-5 mr-2 text-orange-700 dark:text-orange-500" />
+                            <RiComputerFill className="w-5 h-5 mr-2 text-blue-700 dark:text-blue-500" />
                             Work
                         </a>
                     </li>
                     <li>
                         <a href="/contact" className="flex items-center">
-                            <RiContactsBook2Fill className="w-5 h-5 mr-2 text-orange-700 dark:text-orange-500" />
+                            <RiContactsBook2Fill className="w-5 h-5 mr-2 text-blue-700 dark:text-blue-500" />
                             Contact
                         </a>
                     </li>

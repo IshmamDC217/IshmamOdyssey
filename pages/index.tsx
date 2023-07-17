@@ -15,7 +15,8 @@ export default function Home() {
         <title>Ishmam Ahmed</title>
         <link rel="icon" href="/prototypelogo.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
-
+        <link href="https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap" rel="stylesheet"/>
+        
       </Head>
 
       <header>

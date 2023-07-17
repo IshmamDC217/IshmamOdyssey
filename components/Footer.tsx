@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ishlogonewv1 from '../public/ishlogonewv1.png'
+import prototypelogo from '../public/prototypelogo.png'
 import { RiEarthFill } from 'react-icons/ri';
 
 const Footer = () => {
@@ -26,8 +27,8 @@ const Footer = () => {
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <a href="#" className="flex items-center mb-4 sm:mb-0">
                             {/* <RiEarthFill className="w-8 h-8 mr-3 text-orange-700" /> */}
-                            <img src={ishlogonewv1.src} className='h-8' />
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white mx-2">My Odyssey</span>
+                            <img src={prototypelogo.src} className='h-8' />
+                            <span className="ody self-center text-2xl font-semibold whitespace-nowrap text-white mx-2">My Odyssey</span>
                         </a>
                         <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                             <li>
