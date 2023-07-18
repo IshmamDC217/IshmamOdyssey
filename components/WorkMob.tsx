@@ -44,7 +44,7 @@ const Work: FunctionComponent = () => {
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={metoralogo.src} className='projlogo w-[80px] mb-6' />
-            <h2 className="text-center text-xl font-bold mx-4 my-9">Official Band Website</h2>
+            <h2 className="text-center text-lg font-bold mx-4 my-9">Official Band Website</h2>
           </div>
           <div className="grid grid-cols-1">
             {metoraweb.map((work, index) => (
@@ -100,7 +100,7 @@ const Work: FunctionComponent = () => {
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={lock192.src} className='projlogo w-[100px] my-5 mb-8' />
-            <h2 className="text-center text-xl font-bold my-5">End-to-End Encrypted Messaging Platform</h2>
+            <h2 className="text-center text-lg font-bold my-5">End-to-End Encrypted Messaging Platform</h2>
           </div>
           <div className="grid grid-cols-1">
             {crypticchat.map((work, index) => (
@@ -155,7 +155,7 @@ const Work: FunctionComponent = () => {
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={gollogo.src} className='projlogo w-[90px] my-5 mb-8' />
-            <h2 className="text-center text-xl font-bold my-6">Conway's Game of Life - Javascript</h2>
+            <h2 className="text-center text-lg font-bold my-6">Conway's Game of Life - Javascript</h2>
           </div>
           <div className="grid grid-cols-1">
             {goljs.map((work, index) => (
