@@ -411,7 +411,6 @@ section {
 @media (max-height: 700px) {
   .mainDP {
     width: 200px;
-    border: none;
   }
 }
 
