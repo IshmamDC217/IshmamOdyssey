@@ -73,6 +73,10 @@ section {
   font-size: 6em;
 }
 
+/* .titleproj {
+  font-family: 'Bluu Next', sans-serif;
+} */
+
 .homepage {
   background-image: url('../public/modernbackground.jpg');
   background-repeat: no-repeat;
@@ -278,6 +282,18 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.glass-container4 {
+  background: rgba(255, 255, 255, 0.205);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
 }
 
 .hobby-content {

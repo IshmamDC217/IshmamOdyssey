@@ -15,7 +15,7 @@ const Hobby = () => {
                     { name: "tasting", displayName: "Culinary Explorations with my Better Half", desc: "Exploring new cuisines and experimenting with flavors is another hobby that I indulge in. It's all about discovering the world one bite at a time." },
                     { name: "gamer", displayName: "Gaming", desc: "Gaming is an immersive hobby that allows me to dive into different worlds, roles, and narratives. It's an excellent way to unwind and have fun." }
                 ].map((hobby, index) =>
-                    <div className={`hobby hobby-${index % 2 === 0 ? 'even' : 'odd'} glass-container3 border`} key={hobby.name}>
+                    <div className={`hobby hobby-${index % 2 === 0 ? 'even' : 'odd'} glass-container4 border`} key={hobby.name}>
                         <h2>{hobby.displayName}</h2>
                         <div className="hobby-content">
                             {index % 2 === 0 && <img src={`${hobby.name}.svg`} alt={hobby.displayName} className="hobby-img" />}
