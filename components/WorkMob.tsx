@@ -11,8 +11,7 @@ import metoralogo from '../public/metoralogo.png';
 import lock192 from '../public/lock192.png';
 import gollogo from '../public/gollogo.jpg';
 import Link from 'next/link';
-import 'atropos/css';
-import Atropos from 'atropos/react';
+import click from '../public/click.png'
 
 const Work: FunctionComponent = () => {
   const metoraweb = [
@@ -45,7 +44,7 @@ const Work: FunctionComponent = () => {
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={metoralogo.src} className='projlogo w-[80px] mb-6' />
-            <h2 className="text-center text-lg font-bold mx-4 my-6">Official Band Website</h2>
+            <h2 className="text-center text-xl font-bold mx-4 my-9">Official Band Website</h2>
           </div>
           <div className="grid grid-cols-1">
             {metoraweb.map((work, index) => (
@@ -67,6 +66,11 @@ const Work: FunctionComponent = () => {
                   ></motion.div>
                   <div className='image-wrapper'>
                     <Image className='projimage max-w-full mx-auto' src={work.image} alt={work.title} />
+                    <img
+                      src={click.src}
+                      alt="Click me"
+                      style={{ position: 'absolute', zIndex: 10, width: '15%', top: '80%', left: '75%', transform: 'translate(-50%, -50%)' }}
+                    />
                   </div>
                 </div>
               </motion.a>
@@ -76,7 +80,7 @@ const Work: FunctionComponent = () => {
         <div className="project-description my-5 max-w-7xl">
           <Link href='https://metoracliffs.netlify.app'
             target="_blank"
-            rel="noopener noreferrer" className="text-white text-2xl font-semibold mb-2  
+            rel="noopener noreferrer" className="titleproj text-white text-2xl font-semibold mb-2  
              hover:bg-gray-100 md:hover:bg-transparent md:border-0
              md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
              dark:hover:bg-gray-700 dark:hover:text-white 
@@ -96,7 +100,7 @@ const Work: FunctionComponent = () => {
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={lock192.src} className='projlogo w-[100px] my-5 mb-8' />
-            <h2 className="text-center text-lg font-bold my-5">End-to-End Encrypted Messaging Platform</h2>
+            <h2 className="text-center text-xl font-bold my-5">End-to-End Encrypted Messaging Platform</h2>
           </div>
           <div className="grid grid-cols-1">
             {crypticchat.map((work, index) => (
@@ -127,7 +131,7 @@ const Work: FunctionComponent = () => {
         <div className="project-description my-5 max-w-7xl">
           <Link href='https://cryptichat.benmitchell.dev/'
             target="_blank"
-            rel="noopener noreferrer" className="text-white text-2xl font-semibold mb-2  
+            rel="noopener noreferrer" className="titleproj text-white text-2xl font-semibold mb-2  
              hover:bg-gray-100 md:hover:bg-transparent md:border-0
              md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
              dark:hover:bg-gray-700 dark:hover:text-white 
@@ -151,7 +155,7 @@ const Work: FunctionComponent = () => {
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={gollogo.src} className='projlogo w-[90px] my-5 mb-8' />
-            <h2 className="text-center text-lg font-bold my-5">Conway's Game of Life - Javascript</h2>
+            <h2 className="text-center text-xl font-bold my-6">Conway's Game of Life - Javascript</h2>
           </div>
           <div className="grid grid-cols-1">
             {goljs.map((work, index) => (
@@ -184,7 +188,7 @@ const Work: FunctionComponent = () => {
             href="https://comp5400-game-of-life.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-2xl font-semibold mb-2  
+            className="titleproj text-white text-2xl font-semibold mb-2  
              hover:bg-gray-100 md:hover:bg-transparent md:border-0
              md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
              dark:hover:bg-gray-700 dark:hover:text-white 
