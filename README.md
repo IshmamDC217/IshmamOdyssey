@@ -6,7 +6,7 @@ Welcome to the repository for my personal website, which is accessible at https:
 This website is carefully crafted and designed to be presentable to companies in search of developers, as well as potential clients interested in availing freelance services. It encapsulates my blend of problem-solving abilities and creative acumen.
 
 ## Projects Showcased
-Over the past year, I've been working diligently on several exciting projects. This website highlights three of my more recent web projects, each representing a different aspect of my capabilities as a developer. These projects not only showcase the culmination of my technical skills but also my ability to solve complex problems and deliver impactful solutions.
+Over the past year, I've been working diligently on several exciting projects. This website highlights three of my more recent web projects, each representing a different aspect of my capabilities as a developer. These projects not only showcase the culmination of my technical skills but also my ability to solve complex problems and deliver impactful solutions. This website also displays my hobbies.
 
 ## Connect
 Thank you for visiting and embarking on this odyssey with me. If you're interested in working with me or have any questions, don't hesitate to reach out by filling the form in my website or connecting with me on social media.
