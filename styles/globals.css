@@ -82,9 +82,15 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* 
 .work {
   background-image: url('./backdrop/shape2.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.work {
+  background-image: url('../public/work.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
