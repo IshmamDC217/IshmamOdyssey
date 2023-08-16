@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import mainMeUpd3 from '../public/mainMeUpd3.jpg';
 import { motion } from 'framer-motion';
-import mainishdpnew from '../public/mainishdpnew.png';
+import mainishdpnew2 from '../public/mainishdpnew2.png';
 import coolpurp from '../public/coolpurp.gif';
 
 const HomepageMob = () => {
@@ -67,7 +67,7 @@ const HomepageMob = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            src={mainishdpnew.src}
+            src={mainishdpnew2.src}
             alt="Ishmam Ahmed"
             className="mainDP w-64 md:w-96 md:mt-10 border rounded-full border-white bg-[#ffffffb9]"
             style={{ position: 'relative', zIndex: 2 }}

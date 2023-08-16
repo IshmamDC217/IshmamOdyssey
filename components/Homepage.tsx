@@ -1,6 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import mainishdpnew from '../public/mainishdpnew.png';
+import mainishdpnew2 from '../public/mainishdpnew2.png';
 import { SiGmail, SiLinkedin } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
 import 'atropos/css';
@@ -87,9 +87,9 @@ const Homepage = () => {
           <div className="mx-auto">
             <animated.img
               style={fadeIn}
-              src={mainishdpnew.src}
+              src={mainishdpnew2.src}
               alt="Ishmam Ahmed"
-              className="w-[600px] border rounded-full border-white bg-[#ffffffb9] mt-24"
+              className="w-[600px] border rounded-full border-white bg-[#ffffff4b] mt-24"
             />
           </div>
         </div>
