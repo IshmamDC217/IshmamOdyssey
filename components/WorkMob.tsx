@@ -158,7 +158,7 @@ const Work: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className='glass-container2' style={{ padding: '15px' }}>
+      <div className='glass-container2v2' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={gollogo.src} className='projlogo w-[90px] my-5 mb-8' />
