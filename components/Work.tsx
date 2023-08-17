@@ -65,7 +65,7 @@ const Work: FunctionComponent = () => {
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={metoralogo.src} className='w-[90px] mb-3 ' />
-            <h2 className="text-3xl font-bold mx-6 my-12">Official Band Website</h2>
+            <h2 className="text-3xl font-bold mx-14 my-12">Official Band Website</h2>
           </div>
           <div className="container rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#12121262', padding: '80px' }}>
             {metoraweb.map((work, index) => (
