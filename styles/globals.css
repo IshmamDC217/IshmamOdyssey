@@ -59,7 +59,7 @@ section {
 }
 
 .heading {
-  font-family: 'Bluu Next', sans-serif;
+  font-family: Lucida, bold, sans-serif;
   font-size: 4em;
 }
 
@@ -78,22 +78,22 @@ section {
 } */
 
 .homepage {
-  background-image: url('../public/modernbackground.jpg');
+  background-image: url('../public/background.mp4');
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* 
+
 .work {
   background-image: url('./backdrop/shape2.svg');
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 
-.work {
+/* .work {
   background-image: url('../public/work.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 @media (max-width: 768px) {
   .maindesc {
@@ -273,7 +273,7 @@ section {
 }
 
 .glass-container2 {
-  background-color: rgba(27, 64, 215, 0.309);
+  background-color: rgba(44, 12, 133, 0.309);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
@@ -609,7 +609,7 @@ section {
 
 /* About me */
 .about-me-content {
-  background: url('../public/hobbybg.jpg');
+  background: url('../styles/backdrop/hobbies.mp4');
   background-size: cover;
   display: flex;
   flex-direction: column;
