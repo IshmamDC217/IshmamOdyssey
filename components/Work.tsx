@@ -61,11 +61,11 @@ const Work: FunctionComponent = () => {
   return (
     <animated.section style={springProps} className="work">
       <Heading title='Projects'/>
-      <div className='glass-container2 border border-white' style={{ padding: '15px' }}>
+      <div className='glass-container2 border border-gray-500' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
-            <img src={metoralogo.src} className='w-[200px] mb-3 ' />
-            <h2 className="text-3xl font-bold mx-6 my-10">Official Band Website</h2>
+            <img src={metoralogo.src} className='w-[90px] mb-3 ' />
+            <h2 className="text-3xl font-bold mx-6 my-12">Official Band Website</h2>
           </div>
           <div className="container rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#12121262', padding: '80px' }}>
             {metoraweb.map((work, index) => (

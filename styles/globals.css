@@ -78,7 +78,7 @@ section {
 } */
 
 .homepage {
-  background-image: url('../public/background.mp4');
+  background-image: url('../public/modernbackground.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -468,7 +468,7 @@ section {
 }
 
 .workmob {
-  background-image: url('./backdrop/hobbies.mp4');
+  background-image: url('./backdrop/shape2.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -609,7 +609,7 @@ section {
 
 /* About me */
 .about-me-content {
-  background: url('../styles/backdrop/hobbies.mp4');
+  background: url('../styles/backdrop/hobbies.svg');
   background-size: cover;
   display: flex;
   flex-direction: column;
