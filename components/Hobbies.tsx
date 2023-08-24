@@ -6,7 +6,7 @@ const Hobby = () => {
         <div className="about-page">
             <section className="about-me-content hobbies">
                 <video className="hobby-video" autoPlay loop muted>
-                    <source src="/hobbies.mp4" type="video/mp4" />
+                    <source src="/hobbies2.webm" type="video/webm" />
                 </video>
                 <Heading title='Hobbies' />
                 <div className="hobby-grid text-2xl font-bold w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

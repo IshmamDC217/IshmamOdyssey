@@ -256,7 +256,7 @@ section {
 }
 
 .mainglasscontainer {
-  background-color: rgba(28, 37, 53, 0.5);
+  background-color: rgba(28, 37, 53, 0.322);
   border-radius: 10px;
   display: grid;
   place-items: center;
@@ -273,7 +273,7 @@ section {
 }
 
 .glass-container2 {
-  background-color: rgba(194, 192, 218, 0.309);
+  background-color: rgba(194, 192, 218, 0.466);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
@@ -670,6 +670,7 @@ section {
 }
 
 .hobby-grid {
+  border-radius: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

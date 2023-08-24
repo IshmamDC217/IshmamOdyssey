@@ -46,7 +46,7 @@ const Homepage = () => {
   return (
     <section className="homepage">
       <video autoPlay loop muted className="background-video">
-        <source src="/background.mp4" type="video/mp4" />
+        <source src="/hobbies.webm" type="video/webm" />
       </video>
       <div className="relative h-screen grid grid-cols-2 mainglasscontainer">
         <div className="introglasscontainer flex flex-col md:flex-row md:justify-between min-h-screen ml-6">

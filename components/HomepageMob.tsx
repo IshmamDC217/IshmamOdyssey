@@ -19,7 +19,7 @@ const HomepageMob = () => {
   return (
     <section className="homepagemob">
       <video ref={videoRef} autoPlay loop muted playsInline className="background-video">
-        <source src="/background.mp4" type="video/mp4" />
+        <source src="/background.webm" type="video/webm" />
       </video>
       <div className="relative h-screen mt-10">
         <div className="flex items-center justify-center">
