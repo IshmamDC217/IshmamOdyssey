@@ -3,32 +3,37 @@ import mainMeUpd3 from '../public/mainMeUpd3.jpg';
 import { motion } from 'framer-motion';
 import mainishdpnew2 from '../public/mainishdpnew2.png';
 import coolpurp from '../public/coolpurp.gif';
+// import background from '../public/background.mp4'
 
 const HomepageMob = () => {
-    const [showGif, setShowGif] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
-  
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
+  const [showGif, setShowGif] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    const timer = setTimeout(() => {
+      setShowGif(true);
+    }, 2000);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      clearTimeout(timer);
     };
-  
-    useEffect(() => {
-      window.addEventListener('resize', handleResize);
-  
-      const timer = setTimeout(() => {
-        setShowGif(true);
-      }, 2000);
-  
-      return () => {
-        window.removeEventListener('resize', handleResize);
-        clearTimeout(timer);
-      };
-    }, []);
-  
-    const gifWidth = windowWidth > 386 ? '60%' : '80%';
+  }, []);
+
+  const gifWidth = windowWidth > 386 ? '60%' : '80%';
 
   return (
     <section className="homepagemob">
+      <video className="background-video" autoPlay muted loop>
+        <source src='../public/background.mp4' type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="relative h-screen mt-10">
         <div className="flex items-center justify-center">
           <div className="mx-auto text-white text-center">
@@ -54,6 +59,7 @@ const HomepageMob = () => {
             </motion.div>
           </div>
         </div>
+
         <div className="flex items-center justify-center mb-20">
           {showGif && (
             <img
