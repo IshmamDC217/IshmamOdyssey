@@ -31,7 +31,7 @@ const Navigation = () => {
           onClick={toggleSidebar}
           className="text-gray-700 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500"
         >
-          {sidebarOpen ? <FaTimes className="w-1 h-1 text-gray-900" /> : <FaBars className="w-6 h-6 mt-2 text-blue-700" />}
+          {sidebarOpen ? <FaTimes className="w-1 h-1 text-gray-900" /> : <FaBars className="w-6 h-6 mt-2 text-white" />}
         </button>
       </div>
 

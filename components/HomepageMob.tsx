@@ -3,7 +3,6 @@ import mainMeUpd3 from '../public/mainMeUpd3.jpg';
 import { motion } from 'framer-motion';
 import mainishdpnew2 from '../public/mainishdpnew2.png';
 import coolpurp from '../public/coolpurp.gif';
-// import background from '../public/background.mp4'
 
 const HomepageMob = () => {
   const [showGif, setShowGif] = useState(false);
@@ -30,9 +29,8 @@ const HomepageMob = () => {
 
   return (
     <section className="homepagemob">
-      <video className="background-video" autoPlay muted loop>
-        <source src='../public/background.mp4' type="video/mp4" />
-        Your browser does not support the video tag.
+      <video autoPlay loop muted className="background-video">
+        <source src="/background.mp4" type="video/mp4" />
       </video>
       <div className="relative h-screen mt-10">
         <div className="flex items-center justify-center">
@@ -66,7 +64,7 @@ const HomepageMob = () => {
               className='spinny'
               src={coolpurp.src}
               alt="Background Gif"
-              style={{ position: 'absolute', zIndex: 1, width: gifWidth, height: '40%' }}
+              style={{ position: 'absolute', zIndex: 0, width: gifWidth, height: '40%' }}
             />
           )}
           <motion.img
@@ -76,7 +74,7 @@ const HomepageMob = () => {
             src={mainishdpnew2.src}
             alt="Ishmam Ahmed"
             className="mainDP w-64 md:w-96 md:mt-10 border rounded-full border-white bg-[#ffffffb9]"
-            style={{ position: 'relative', zIndex: 2 }}
+            style={{ position: 'relative', zIndex: 1 }}
           />
         </div>
       </div>

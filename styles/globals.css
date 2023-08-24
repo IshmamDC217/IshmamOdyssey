@@ -78,13 +78,13 @@ section {
 } */
 
 .homepage {
-  background-image: url('../public/modernbackground.jpg');
+  /* background-image: url('../public/modernbackground.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .work {
-  background-image: url('./backdrop/shape2.svg');
+  background-image: url('./backdrop/shape2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -273,17 +273,17 @@ section {
 }
 
 .glass-container2 {
-  background-color: rgba(44, 12, 133, 0.309);
+  background-color: rgba(194, 192, 218, 0.309);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  padding: 20px; 
+  padding: 20px;
 }
 
 .glass-container2v2 {
-  background-color: rgba(17,8,23,255);
+  background-color: rgba(17, 8, 23, 255);
   backdrop-filter: blur(10px);
   border-radius: 10px;
-  padding: 20px; 
+  padding: 20px;
 }
 
 .glass-container3 {
@@ -354,7 +354,8 @@ section {
 }
 
 .navbar {
-  background: linear-gradient(900deg, #272b3db6, #091b7242);
+  background: linear-gradient(900deg, #191a20b6, #03071b8c);
+  z-index: 2;
 }
 
 .footercont {
@@ -418,7 +419,7 @@ section {
 }
 
 .introglasscontainer {
-  background-color: rgba(30, 46, 59, 0.404);
+  background-color: rgba(24, 23, 32, 0.404);
   backdrop-filter: blur(10px);
   padding: 30px;
   max-width: 700px;
@@ -443,25 +444,30 @@ section {
   }
 }
 
-/* .homepagemob {
+.homepagemob {
   background-image: url('../public/background.mp4');
   background-repeat: no-repeat;
   background-size: cover;
-} */
-
-.homepagemob {
-  position: relative;
-  overflow: hidden;
 }
 
-.background-video {
+.homepagemob .background-video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   z-index: -1;
+  object-fit: cover;
+}
+
+.homepage .background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 108%;
+  z-index: 0;
+  object-fit: cover;
 }
 
 .footer {
@@ -481,6 +487,10 @@ section {
   .sidebarmob {
     display: none;
   }
+}
+
+.sidebarmob {
+  z-index: 3;
 }
 
 @media (max-width: 760px) {
@@ -631,13 +641,26 @@ section {
 
 /* About me */
 .about-me-content {
-  background: url('../styles/backdrop/hobbies.svg');
+  /* background: url('../styles/backdrop/hobbies.svg'); */
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hobby-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover; 
 }
 
 .hobby-grid {
