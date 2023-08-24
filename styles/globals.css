@@ -444,18 +444,18 @@ section {
   }
 }
 
-.homepagemob {
+/* .homepagemob {
   background-image: url('../public/background.mp4');
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .homepagemob .background-video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 112%;
+  height: 115%;
   z-index: -1;
   object-fit: cover;
 }
