@@ -1,35 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import mainMeUpd3 from '../public/mainMeUpd3.jpg';
 import { motion } from 'framer-motion';
 import mainishdpnew2 from '../public/mainishdpnew2.png';
 import coolpurp from '../public/coolpurp.gif';
 
 const HomepageMob = () => {
-  const [showGif, setShowGif] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
-
-  const handleResize = () => {
-    setWindowWidth(window.innerWidth);
-  };
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
-    window.addEventListener('resize', handleResize);
-
-    const timer = setTimeout(() => {
-      setShowGif(true);
-    }, 2000);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-      clearTimeout(timer);
-    };
+    const videoElem = videoRef.current;
+    if (videoElem && videoElem.paused) {
+      videoElem.play().catch(error => {
+        console.warn("Video play was prevented", error);
+      });
+    }
   }, []);
-
-  const gifWidth = windowWidth > 386 ? '60%' : '80%';
 
   return (
     <section className="homepagemob">
-      <video autoPlay loop muted className="background-video">
+      <video ref={videoRef} autoPlay loop muted playsInline className="background-video">
         <source src="/background.mp4" type="video/mp4" />
       </video>
       <div className="relative h-screen mt-10">
@@ -59,14 +48,6 @@ const HomepageMob = () => {
         </div>
 
         <div className="flex items-center justify-center mb-20">
-          {/* {showGif && (
-            <img
-              className='spinny'
-              src={coolpurp.src}
-              alt="Background Gif"
-              style={{ position: 'absolute', zIndex: 0, width: gifWidth, height: '40%' }}
-            />
-          )} */}
           <motion.img
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}

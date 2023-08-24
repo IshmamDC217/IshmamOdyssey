@@ -462,6 +462,8 @@ section {
   z-index: -1;
   transform: translate(-50%, -50%);
   object-fit: cover;
+  background: url('/public/modernbackground.jpg') center center no-repeat;
+  background-size: cover;
 }
 
 .homepage .background-video {
