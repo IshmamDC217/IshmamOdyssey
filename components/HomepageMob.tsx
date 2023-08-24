@@ -59,14 +59,14 @@ const HomepageMob = () => {
         </div>
 
         <div className="flex items-center justify-center mb-20">
-          {showGif && (
+          {/* {showGif && (
             <img
               className='spinny'
               src={coolpurp.src}
               alt="Background Gif"
               style={{ position: 'absolute', zIndex: 0, width: gifWidth, height: '40%' }}
             />
-          )}
+          )} */}
           <motion.img
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
