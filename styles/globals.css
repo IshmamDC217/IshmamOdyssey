@@ -279,7 +279,8 @@ section {
 }
 
 .glass-container2 {
-  background-color: rgba(194, 192, 218, 0.466);
+  /* background-color: rgba(255, 130, 7, 255); */
+  background-color: rgba(48, 101, 245, 0.438);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
