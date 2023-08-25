@@ -126,6 +126,12 @@ section {
 /* Trying award css */
 .homepage {
   background-color: #121212;
+  /* background-image: url('../public/hobbies.mp4');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  padding-top: 1px;
+  padding-bottom: 1px; */
 }
 
 .relative {
