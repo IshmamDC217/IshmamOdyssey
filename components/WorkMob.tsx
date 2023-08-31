@@ -11,10 +11,13 @@ import metoralogo from '../public/metoralogo.png';
 import lock192 from '../public/lock192.png';
 import gollogo from '../public/gollogo.jpg';
 import Link from 'next/link';
-import 'atropos/css';
-import Atropos from 'atropos/react';
+import click from '../public/click.png'
+import { useInView } from 'react-intersection-observer';
+import { once } from 'process';
 
 const Work: FunctionComponent = () => {
+  const [ref, inView] = useInView({ threshold: 0.2 });
+
   const metoraweb = [
     {
       image: macmet,
@@ -45,43 +48,51 @@ const Work: FunctionComponent = () => {
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={metoralogo.src} className='projlogo w-[80px] mb-6' />
-            <h2 className="text-center text-lg font-bold mx-4 my-6">Official Band Website</h2>
+            <h2 className="text-center text-lg font-bold mx-4 my-9">Official Band Website</h2>
           </div>
           <div className="grid grid-cols-1">
-            {metoraweb.map((work, index) => (
-              <motion.a
-                key={index}
-                href={work.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link w-inline-block"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1.2 }}
-                transition={{ duration: 0.8, delay: index * 0.2, type: 'spring', stiffness: 150 }}
-              >
-                <div className="project-image">
-                  <motion.div
-                    className="image-overlay"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  ></motion.div>
-                  <div className='image-wrapper'>
-                    <Image className='projimage max-w-full mx-auto' src={work.image} alt={work.title} />
+            {metoraweb.map((work, index) => {
+              return (
+                <motion.a
+                  key={index}
+                  href={work.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ref={ref} // Attach the ref to the element you want to observe
+                  className={`project-link w-inline-block ${inView ? 'animate-in' : ''}`}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: inView ? 1 : 0, scale: inView ? 1.2 : 0.8 }}
+                  transition={{ duration: 0.8, delay: index * 0.2, type: 'spring', stiffness: 150 }}
+                >
+                  <div className="project-image">
+                    <motion.div
+                      className="image-overlay"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    ></motion.div>
+                    <div className='image-wrapper'>
+                      <Image className='projimage max-w-full mx-auto' src={work.image} alt={work.title} />
+                      <img
+                        src={click.src}
+                        alt="Click me"
+                        style={{ position: 'absolute', zIndex: 10, width: '15%', top: '80%', left: '75%', transform: 'translate(-50%, -50%)' }}
+                      />
+                    </div>
                   </div>
-                </div>
-              </motion.a>
-            ))}
+                </motion.a>
+              );
+            })}
           </div>
         </div>
         <div className="project-description my-5 max-w-7xl">
-          <Link href='https://metoracliffs.netlify.app'
+          <Link href='https://cryptichat.benmitchell.dev/'
             target="_blank"
-            rel="noopener noreferrer" className="text-white text-2xl font-semibold mb-2  
+            rel="noopener noreferrer" className="titleproj text-white text-2xl font-semibold mb-2  
              hover:bg-gray-100 md:hover:bg-transparent md:border-0
              md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
              dark:hover:bg-gray-700 dark:hover:text-white 
-             md:dark:hover:bg-transparent flex justify-center items-center">Metora Cliffs Web</Link>
-          <p className="innerglasscontainer text-black text-center text-lg">
+             md:dark:hover:bg-transparent flex justify-center items-center">Cryptic Chat</Link>
+          <p className='innerglasscontainer text-black text-center text-lg'>
             Metora Cliffs Web is the official website for Metora Cliffs, a video game-inspired progressive metal band
             that composes songs with a Nintendo-esque vibe. The website is developed with a video game theme to reflect
             the band's unique style and energy. It is built using modern web technologies such as Next.js, React, and
@@ -127,7 +138,7 @@ const Work: FunctionComponent = () => {
         <div className="project-description my-5 max-w-7xl">
           <Link href='https://cryptichat.benmitchell.dev/'
             target="_blank"
-            rel="noopener noreferrer" className="text-white text-2xl font-semibold mb-2  
+            rel="noopener noreferrer" className="titleproj text-white text-2xl font-semibold mb-2  
              hover:bg-gray-100 md:hover:bg-transparent md:border-0
              md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
              dark:hover:bg-gray-700 dark:hover:text-white 
@@ -147,11 +158,11 @@ const Work: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className='glass-container2' style={{ padding: '15px' }}>
+      <div className='glass-container2v2' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={gollogo.src} className='projlogo w-[90px] my-5 mb-8' />
-            <h2 className="text-center text-lg font-bold my-5">Conway's Game of Life - Javascript</h2>
+            <h2 className="text-center text-lg font-bold my-6">Conway's Game of Life - Javascript</h2>
           </div>
           <div className="grid grid-cols-1">
             {goljs.map((work, index) => (
@@ -184,7 +195,7 @@ const Work: FunctionComponent = () => {
             href="https://comp5400-game-of-life.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-2xl font-semibold mb-2  
+            className="titleproj text-white text-2xl font-semibold mb-2  
              hover:bg-gray-100 md:hover:bg-transparent md:border-0
              md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
              dark:hover:bg-gray-700 dark:hover:text-white 

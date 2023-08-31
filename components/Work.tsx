@@ -61,13 +61,13 @@ const Work: FunctionComponent = () => {
   return (
     <animated.section style={springProps} className="work">
       <Heading title='Projects'/>
-      <div className='glass-container border border-gray-900' style={{ padding: '15px' }}>
+      <div className='glass-container2 border border-gray-500' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
-            <img src={metoralogo.src} className='w-[80px] mb-5 ' />
-            <h2 className="text-3xl font-bold mx-6 my-10">Official Band Website</h2>
+            <img src={metoralogo.src} className='w-[90px] mb-3 ' />
+            <h2 className="text-3xl font-bold mx-14 my-12">Official Band Website</h2>
           </div>
-          <div className="container rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#12121262', padding: '80px' }}>
+          <div className="container rounded-lg project-container border border-gray-400 grid grid-cols-2 gap-32" style={{ backgroundColor: '#ffffff25', padding: '80px'}}>
             {metoraweb.map((work, index) => (
               <motion.a
                 key={index}
@@ -126,10 +126,10 @@ const Work: FunctionComponent = () => {
       <div className='glass-container2 rounded-lg my-20 border border-gray-500' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
-            <img src={lock192.src} className='w-[100px] mb-5 border rounded-full' />
-            <h2 className="text-3xl font-bold mx-6 my-7">End-to-End Encrypted Messaging Platform</h2>
+            <img src={lock192.src} className='w-[110px] mb-3 border rounded-full' />
+            <h2 className="text-3xl font-bold mx-14 my-9">End-to-End Encrypted Messaging Platform</h2>
           </div>
-          <div className="container rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#12121262', padding: '80px' }}>
+          <div className="container rounded-lg project-container border border-gray-400 grid grid-cols-2 gap-32" style={{ backgroundColor: '#ffffff25', padding: '80px' }}>
             {crypticchat.map((work, index) => (
               <motion.a
                 key={index}
@@ -192,10 +192,10 @@ const Work: FunctionComponent = () => {
       <div className='glass-container2 rounded-lg border border-gray-500' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
-            <img src={gollogo.src} className='w-[90px] mb-5' />
-            <h2 className="text-3xl font-bold mx-6 my-7">Conway's Game of Life - Javascript</h2>
+            <img src={gollogo.src} className='w-[100px] mb-3' />
+            <h2 className="text-3xl font-bold mx-14 my-7">Conway's Game of Life - Javascript</h2>
           </div>
-          <div className="golcontainer rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#12121262', padding: '80px' }}>
+          <div className="golcontainer rounded-lg project-container border border-gray-400 grid grid-cols-2 gap-32" style={{ backgroundColor: '#ffffff25', padding: '80px' }}>
             {goljs.map((work, index) => (
               <motion.a
                 key={index}

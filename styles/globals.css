@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/bluu-next');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -48,17 +52,48 @@ section {
   min-height: 100vh;
 }
 
+.welcometitle {
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Bluu Next', sans-serif;
+  font-size: 2em;
+}
+
+.heading {
+  font-family: Lucida, bold, sans-serif;
+  font-size: 4em;
+}
+
+.ody {
+  font-family: 'Bluu Next', sans-serif;
+}
+
+.ishahm {
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Bluu Next', sans-serif;
+  font-size: 6em;
+}
+
+/* .titleproj {
+  font-family: 'Bluu Next', sans-serif;
+} */
+
 .homepage {
-  background-image: url('./backdrop/homepage.svg');
+  /* background-image: url('../public/modernbackground.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .work {
-  background-image: url('./backdrop/shape2.svg');
+  background-image: url('./backdrop/shape2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* .work {
+  background-image: url('../public/work.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 @media (max-width: 768px) {
   .maindesc {
@@ -75,9 +110,28 @@ section {
   }
 }
 
+@media (max-width: 1430px) {
+  .ishahm {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 1430px) {
+  .ishahm {
+    font-size: 3em;
+    letter-spacing: 2px;
+  }
+}
+
 /* Trying award css */
 .homepage {
   background-color: #121212;
+  /* background-image: url('../public/hobbies.mp4');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  padding-top: 1px;
+  padding-bottom: 1px; */
 }
 
 .relative {
@@ -207,16 +261,14 @@ section {
   object-fit: cover;
 }
 
-.mainglasscontainer{
-  background-color: rgba(0, 0, 0, 0.309);
-  backdrop-filter: blur(10px);
+.mainglasscontainer {
+  background-color: rgba(28, 37, 53, 0.322);
   border-radius: 10px;
   display: grid;
   place-items: center;
   align-content: center;
   min-height: 100vh;
   width: 100%
-
 }
 
 .glass-container {
@@ -227,14 +279,22 @@ section {
 }
 
 .glass-container2 {
-  background-color: rgba(27, 64, 215, 0.309);
+  /* background-color: rgba(255, 130, 7, 255); */
+  background-color: rgba(48, 101, 245, 0.438);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.glass-container2v2 {
+  background-color: rgba(17, 8, 23, 255);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
 }
 
 .glass-container3 {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.205);
   backdrop-filter: blur(5px);
   padding: 20px;
   border-radius: 15px;
@@ -244,12 +304,26 @@ section {
   align-items: center;
 }
 
+.glass-container4 {
+  background: rgba(255, 255, 255, 0.205);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
 .hobby-content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  /* background-color: rgba(0, 0, 0, 0.309); */
+
 }
 
 .hobby-img {
@@ -261,9 +335,12 @@ section {
 }
 
 @keyframes scale {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
@@ -283,13 +360,77 @@ section {
   filter: grayscale(0%)
 }
 
+.navbar {
+  background: linear-gradient(900deg, #191a20b6, #03071b8c);
+  z-index: 2;
+}
 
+.footercont {
+  background: linear-gradient(900deg, #272b3db6, #091b7242);
+}
 
 .innerglasscontainer {
   background-color: rgba(229, 225, 225, 0.638);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
+}
+
+.bioglasscontainer {
+  background-color: rgba(30, 46, 59, 0.638);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 400px;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 1170) {
+  .bioglasscontainer {
+    display: none;
+  }
+}
+
+.bioglasscontainer:hover {
+  transform: scale(1.05);
+}
+
+.mediaglasscontainer {
+  background-color: rgba(30, 46, 59, 0.638);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 180px;
+  transition: all 0.3s ease;
+}
+
+.mediaicons:hover {
+  scale: 1.1;
+}
+
+.mediaglasscontainer:hover {
+  transform: scale(1.1);
+}
+
+.typeglasscontainer {
+  background-color: rgba(30, 46, 59, 0.638);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 280px;
+  transition: all 0.3s ease;
+}
+
+.typeglasscontainer:hover {
+  transform: scale(1.1);
+}
+
+.introglasscontainer {
+  background-color: rgba(24, 23, 32, 0.404);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  max-width: 700px;
+  max-height: 700px;
 }
 
 @media (min-width: 760px) {
@@ -307,18 +448,43 @@ section {
 @media (max-height: 700px) {
   .mainDP {
     width: 200px;
-    border: none;
   }
 }
 
 .homepagemob {
-  background-image: url('./backdrop/homepagemob.svg');
-  background-repeat: no-repeat;
+  position: relative;
+  width: 100vw; 
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.homepagemob .background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  background: url('/public/modernbackground.jpg') center center no-repeat;
   background-size: cover;
 }
 
+.homepage .background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 108%;
+  z-index: 0;
+  object-fit: cover;
+}
+
 .footer {
-  background-image: url('./backdrop/footer.svg');
+  background-image: url('./backdrop/footercont.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
@@ -336,6 +502,10 @@ section {
   }
 }
 
+.sidebarmob {
+  z-index: 3;
+}
+
 @media (max-width: 760px) {
   .work {
     display: none;
@@ -343,7 +513,7 @@ section {
 }
 
 .workmob {
-  background-image: url('./backdrop/workmob.svg');
+  background-image: url('./backdrop/shape2.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -395,7 +565,7 @@ section {
 }
 
 .contactme {
-  background-image: url('./backdrop/contactbg.svg');
+  background-image: url('./backdrop/footer2.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -484,42 +654,60 @@ section {
 
 /* About me */
 .about-me-content {
-  background: url('../public/about.svg');
+  /* background: url('../styles/backdrop/hobbies.svg'); */
   background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hobby-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover; 
 }
 
 .hobby-grid {
+  border-radius: 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.309);
+
 }
 
 .hobby {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 35%; /* Adjust this value to set the desired width for each hobby block */
-    margin: 2.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 35%;
+  /* Adjust this value to set the desired width for each hobby block */
+  margin: 2.5%;
 }
 
 .hobby h2 {
-    width: 100%;
+  width: 100%;
 }
 
-.hobby-even .hobby-content-large, .hobby-odd .hobby-content-large {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.hobby-even .hobby-content-large,
+.hobby-odd .hobby-content-large {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .hobby-odd .hobby-content-large {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 @media (max-width: 1000px) {
