@@ -1,7 +1,7 @@
 # "My Odyssey" - Ishmam's personal website
 
 ## Overview
-Welcome to the repository for my personal website, which is accessible at https://www.ishmamahmed.com/. This site is my professional portfolio that outlines my skills, experiences, and the journey I've pursued in the realm of web development. I've aptly named it "My Odyssey" to reflect the narrative of challenges and accomplishments that I've encountered along my career path.
+Welcome to the repository for my personal website, which is accessible at https://www.ishmamahmed.com/. This site is my professional portfolio that outlines my skills, experiences, hobbies and the journey I've pursued in the realm of web development. I've aptly named it "My Odyssey" to reflect the narrative of challenges and accomplishments that I've encountered along my career path.
 
 This website is carefully crafted and designed to be presentable to companies in search of developers, as well as potential clients interested in availing freelance services. It encapsulates my blend of problem-solving abilities and creative acumen.
 
