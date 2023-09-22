@@ -59,7 +59,7 @@ section {
 }
 
 .heading {
-  font-family: Lucida, bold, sans-serif;
+  font-family: 'Bluu Next', sans-serif;
   font-size: 4em;
 }
 
@@ -280,7 +280,7 @@ section {
 
 .glass-container2 {
   /* background-color: rgba(255, 130, 7, 255); */
-  background-color: rgba(48, 101, 245, 0.438);
+  background-color: rgba(204, 207, 216, 0.26);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
