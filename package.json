@@ -18,7 +18,7 @@
     "effect": "^2.0.0-next.13",
     "emailjs-com": "^3.2.0",
     "font-face": "^2.3.4",
-    "framer-motion": "^10.12.12",
+    "framer-motion": "^10.16.4",
     "next": "13.4.2",
     "next-images": "^1.8.5",
     "postcss": "8.4.23",
