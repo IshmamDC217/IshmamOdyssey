@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ishlogonewv1 from '../public/ishlogonewv1.png'
-import prototypelogo from '../public/prototypelogo.png'
+import ishlogobw from '../public/ishlogobw.png'
 import { RiEarthFill } from 'react-icons/ri';
 
 const Footer = () => {
@@ -27,20 +27,20 @@ const Footer = () => {
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <a href="#" className="flex items-center mb-4 sm:mb-0">
                             {/* <RiEarthFill className="w-8 h-8 mr-3 text-orange-700" /> */}
-                            <img src={prototypelogo.src} className='h-8' />
-                            <span className="ody self-center text-2xl font-semibold whitespace-nowrap text-white mx-2">The Odyssey</span>
+                            <img src={ishlogobw.src} className='h-8' />
+                            <span className="ody self-center text-2xl font-semibold whitespace-nowrap text-black mx-2">The Odyssey</span>
                         </a>
                         <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                             <li>
-                                <button onClick={handlePrivacyPolicyClick} className="footer-link px-3">Privacy Policy</button>
+                                <button onClick={handlePrivacyPolicyClick} className="footer-link px-3 text-black">Privacy Policy</button>
                             </li>
                             <li>
-                                <button onClick={handleLicensingClick} className="footer-link">Licensing</button>
+                                <button onClick={handleLicensingClick} className="footer-link text-black">Licensing</button>
                             </li>
                         </ul>
                     </div>
                     <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                    <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400"> &copy; 2023 <a href="https://ishmamahmed.netlify.app/" className="hover:underline">Ishmam™</a>. All Rights Reserved.</span>
+                    <span className="block text-sm text-gray-500 sm:text-center dark:text-black"> &copy; 2023 <a href="https://ishmamahmed.netlify.app/" className="hover:underline">Ishmam™</a>. All Rights Reserved.</span>
                 </div>
             </footer>
 

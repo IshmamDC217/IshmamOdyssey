@@ -369,7 +369,7 @@ section {
 
 
 .footercont {
-  background: linear-gradient(900deg, #272b3db6, #091b7242);
+  background: linear-gradient(900deg, #eb8f17b6, #f8eaba42);
 }
 
 .innerglasscontainer {
@@ -500,7 +500,7 @@ section {
 }
 
 .footer {
-  background-image: url('./backdrop/footercont.svg');
+  background-image: url('./backdrop/footernew.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
@@ -580,7 +580,7 @@ section {
 }
 
 .contactme {
-  background-image: url('./backdrop/footer2.svg');
+  background-image: url('./backdrop/contactusnew.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
