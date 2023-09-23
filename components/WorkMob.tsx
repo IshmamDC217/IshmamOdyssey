@@ -45,9 +45,12 @@ const Work: FunctionComponent = () => {
 
   return (
     <section>
-      <Heading title='Projects' />
       <div className='workmob'>
       <div className='glass-container'>
+      <div className=' headingmob flex justify-center items-center text-5xl w-full border-b-4 border-[#68513b]' style={{color:'#68513b'}}>
+      Projects
+    </div>
+        &nbsp;
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={metoralogo.src} className='projlogo w-[80px] mb-6' />
