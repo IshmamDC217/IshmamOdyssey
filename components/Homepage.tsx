@@ -1,13 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
-import mainishdpnew2 from '../public/mainishdpnew2.png';
 import { SiGmail, SiLinkedin } from 'react-icons/si';
 import { AiFillGithub } from 'react-icons/ai';
-import 'atropos/css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
+import { motion } from 'framer-motion';
 
 const Homepage = () => {
   useEffect(() => {
@@ -43,31 +41,33 @@ const Homepage = () => {
     config: { tension: 180, friction: 12 },
   });
 
+  const imageVariant = {
+    hidden: { rotate: -10 },
+    visible: { rotate: 10 },
+  };
+
   return (
     <section className="homepage">
-      <video autoPlay loop muted className="background-video">
-        <source src="/hobbies.webm" type="video/webm" />
-      </video>
-      <div className="relative h-screen grid grid-cols-2 mainglasscontainer">
-        <div className="introglasscontainer flex flex-col md:flex-row md:justify-between min-h-screen ml-6">
+      <div className="relative h-screen grid grid-cols-2">
+        <div className="flex flex-col md:flex-row md:justify-between min-h-screen ml-6">
           <animated.div
             style={fadeIn}
-            className="mb-10 md:mt-36"
+            className="mb-10 md:mt-20"
           >
-            <h2 className="welcometitle text-3xl md:text-4xl font-semibold">Hi there, I'm</h2>
-            <animated.h1 style={fadeIn} className=" ishahm text-4xl my-12 md:mb-12 text-blue-400 font-bold">Ishmam Ahmed</animated.h1>
-            <div className="mediaglasscontainer border media-icons flex mb-5">
+            <h2 className="text-3xl mb-12 md:text-5xl text-gray-800 font-bold">Hi there, I'm</h2>
+            <animated.h1 style={fadeIn} className=" ishahm text-4xl md:mb-12 text-[#68513b] font-bold">Ishmam Ahmed</animated.h1>
+            <div className="media-icons flex mb-5">
               <animated.a style={bounce} href="mailto:ishmam.ahmed24@gmail.com" rel="noopener noreferrer" className="mediaicons mr-6">
-                <SiGmail className="text-3xl" style={{ color: '#c4302b' }} />
+                <SiGmail className="text-5xl" style={{ color: '#000000' }} />
               </animated.a>
               <animated.a style={bounce} href="https://github.com/IshmamDC217" rel="noopener noreferrer" className="mediaicons mr-6">
-                <AiFillGithub className="text-3xl" style={{ color: '#ffffff' }} />
+                <AiFillGithub className="text-5xl" style={{ color: '#000000' }} />
               </animated.a>
               <animated.a style={bounce} href="https://www.linkedin.com/in/ishmam-ahmed-689b0998/" rel="noopener noreferrer" className="mediaicons mr-6">
-                <SiLinkedin className="text-3xl" style={{ color: '#3b5998' }} />
+                <SiLinkedin className="text-5xl" style={{ color: '#000000' }} />
               </animated.a>
             </div>
-            <h4 className="typeglasscontainer border text-lg md:text-2xl text-white font-bold mb-5">
+            <h4 className="text-lg md:text-3xl text-[#68513b] font-bold mb-5">
               <Typewriter
                 options={{
                   strings: ['Welcome to my page!', 'Leeds Based', 'Software Engineer', 'Frontend Developer', 'Musician', 'Ui/Ux Designer'],
@@ -79,25 +79,25 @@ const Homepage = () => {
             <div>
               <animated.p
                 style={fadeIn}
-                className="bioglasscontainer text-xs md:text-sm lg:text-lg border max-w-[700px] text-white txt"
+                className="text-xs md:text-sm lg:text-xl font-semibold max-w-[750px] text-gray-800 txt pb-10"
               >
-                Allow me to introduce myself as a <b>software engineer</b> and <b>musician</b>. With a <b>BSc in Computer Science</b> and an <b>MEng in Artificial Intelligence</b>, I have a strong foundation in both technical problem-solving and innovative thinking. As a guitarist, I channel my creative passion through music. I work as a software engineer at <a href='https://www.hlrlookup.com' rel="noopener noreferrer" className='font-bold underline hover:text-blue-400'>HLR Lookup</a> in Leeds and play guitar for the progressive rock band, <a href='https://metoracliffs.netlify.app' rel="noopener noreferrer" className='font-bold underline hover:text-blue-400'>Metora Cliffs</a>. Blending my technical expertise and musical passion, I create captivating experiences at the intersection of technology and music.
+                Allow me to introduce myself as a <b className='text-[#68513b]'>software engineer</b> and <b className='text-[#68513b]'>musician</b>. Having a Computer Science degree specializing in Artificial Intelligence, I have a strong foundation in both technical problem-solving and innovative thinking. As an <b className='text-[#68513b]'>instrumentalist</b>, I channel my creative passion through music.
+                <br /><br />
+                Currently, I'm immersed in two exciting worlds: by day, I work as a full-stack software engineer at <a href='https://www.hlrlookup.com' rel="noopener noreferrer" className='font-bold underline hover:text-[#68513b]'>HLR Lookup</a>, and by night, I'm shredding the guitar for the progressive rock band, <a href='https://metoracliffs.netlify.app' rel="noopener noreferrer" className='font-bold underline hover:text-[#68513b]'>Metora Cliffs</a>, both based in Leeds. Blending my technical expertise and musical passion, I create captivating experiences at the intersection of technology and music.
               </animated.p>
             </div>
+            <a href='https://linktr.ee/jazzmaster?utm_source=linktree_profile_share&ltsid=ef8fc291-9300-4371-b17a-e94d030e7559'
+              className='text-white mt-5 p-3 rounded-lg bg-[#68513b] font-semibold'>Check out my Link Tree!</a>
           </animated.div>
         </div>
-        <div className="flex items-center justify-center mb-60">
-          <div className="mx-auto">
-            <animated.img
-              style={fadeIn}
-              src={mainishdpnew2.src}
-              alt="Ishmam Ahmed"
-              className="w-[600px] border rounded-full border-white bg-[#ffffff4b] mt-24"
-            />
+
+        <div className="image-container flex flex-col items-center mt-5 ml-36"> 
+          <img src="/ishdp.jpg" alt="Big Image" className="rounded-lg w-[600px] mb-2" />
+          <div className="flex small-images">
+            <img src="/landingpic4.jpg" alt="Image 1" className="rounded-lg w-[194px] h-[194px] mx-1 object-cover" />
+            <img src="/landingpic2.jpg" alt="Image 2" className="rounded-lg w-[194px] h-[194px] mx-1 object-cover" />
+            <img src="/landingpic3.jpg" alt="Image 3" className="rounded-lg w-[194px] h-[194px] mx-1 object-cover" />
           </div>
-        </div>
-        <div className="flex items-center justify-center">
-          <div className="mx-auto"></div>
         </div>
         <ToastContainer />
       </div>
