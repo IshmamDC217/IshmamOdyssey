@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-  color: white;
+  color: black;
 }
 
 p {
@@ -125,13 +125,7 @@ section {
 
 /* Trying award css */
 .homepage {
-  background-color: #121212;
-  /* background-image: url('../public/hobbies.mp4');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
-  padding-top: 1px;
-  padding-bottom: 1px; */
+  background-color: #f3e7db;
 }
 
 .relative {
@@ -280,10 +274,10 @@ section {
 
 .glass-container2 {
   /* background-color: rgba(255, 130, 7, 255); */
-  background-color: rgba(204, 207, 216, 0.26);
+  background-color: rgba(196, 174, 146, 0.336);
   backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: large;
+  padding: 5px;
 }
 
 .glass-container2v2 {
@@ -361,9 +355,18 @@ section {
 }
 
 .navbar {
-  background: linear-gradient(900deg, #191a20b6, #03071b8c);
+  /* padding-bottom: 3%; */
+  background-color: #f3e7db;
+  padding-top: 3%;
   z-index: 2;
 }
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
 
 .footercont {
   background: linear-gradient(900deg, #272b3db6, #091b7242);
@@ -425,13 +428,13 @@ section {
   transform: scale(1.1);
 }
 
-.introglasscontainer {
+/* .introglasscontainer {
   background-color: rgba(24, 23, 32, 0.404);
   backdrop-filter: blur(10px);
   padding: 30px;
   max-width: 700px;
   max-height: 700px;
-}
+} */
 
 @media (min-width: 760px) {
   .homepagemob {
@@ -453,8 +456,8 @@ section {
 
 .homepagemob {
   position: relative;
-  width: 100vw; 
-  height: 100vh; 
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -673,7 +676,7 @@ section {
   width: 100%;
   height: 100%;
   z-index: -1;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .hobby-grid {
@@ -714,4 +717,22 @@ section {
   .about-page {
     display: none;
   }
+}
+
+/* CSS for Hobby page */
+.hobby-page {
+  background-color: #f3e7db;
+}
+
+.hobby-image-container {
+  max-width: 900px;
+}
+
+.hobby-large-image {
+  width: 100%;
+}
+
+.hobby-list {
+  list-style-type: disc;
+  padding-left: 2rem;
 }
