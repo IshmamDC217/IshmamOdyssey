@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 import { BsHouseDoorFill } from 'react-icons/bs';
 import { RiComputerFill, RiContactsBook2Fill } from 'react-icons/ri';
 import ishlogonewv1 from '../public/ishlogonewv1.png'
-import prototypelogo from '../public/prototypelogo.png'
+import ishlogobw from '../public/ishlogobw.png'
 
 const Navigation = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -20,11 +20,10 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="navbar shadow px-4 md:px-24 lg:px-80 py-2 flex justify-between items-center relative">
+    <nav className="navbar px-4 md:px-24 lg:px-80 py-3 flex justify-between items-center relative sticky top-0 z-10">
       <div className="flex items-center lg:mt-1">
-        <img src={prototypelogo.src} className='h-14 w-14' />
-        {/* <RiEarthFill className="w-8 h-8 mr-3 text-blue-700" /> */}
-        <a href="#" className="ody text-2xl font-semibold text-white mx-2">The Odyssey</a>
+        <img src={ishlogobw.src} className='h-12 w-12' />
+        <a href="#" className="ody text-4xl font-bold text-black mx-2">The Odyssey</a>
       </div>
       <div className="md:hidden">
         <button
@@ -39,15 +38,15 @@ const Navigation = () => {
 
       <div className="hidden md:flex items-center">
         <div className="ml-10 flex items-baseline space-x-4">
-          <a href="/" className="text-gray-300 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium flex items-center" aria-current="page"><BsHouseDoorFill className="w-5 h-5 mr-2 text-blue-700 text-blue-500" />
-            Home</a>
+          <a href="/" className="text-[#b2977c] hover:text-[#77613c] px-3 py-2 rounded-md text-2xl flex font-bold items-center " aria-current="page"><BsHouseDoorFill className="w-8 h-8 mr-2 text-[#68513b]" />
+            HOME</a>
           <div className="relative mt-2">
             <button
               onClick={toggleDropdown}
-              className="text-gray-300 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium flex items-center"
+              className="text-[#b2977c] hover:text-[#77613c] px-3 py-2 rounded-md text-2xl font-bold flex items-center"
             >
-              <RiComputerFill className="w-5 h-5 mr-2 text-blue-700" />
-              Work
+              <RiComputerFill className="w-8 h-8 mr-2 text-[#68513b]" />
+              WORK
               <svg
                 className={`w-5 h-5 ml-1 transform ${isDropdownOpen ? 'rotate-180' : ''}`}
                 aria-hidden="true"
@@ -65,7 +64,7 @@ const Navigation = () => {
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                 <a
                   href="https://metoracliffs.netlify.app"
-                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-white hover:bg-gray-700"
+                  className="block px-4 py-2 text-2xl hover:bg-gray-100 text-white hover:bg-gray-700"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="menuitem"
@@ -74,7 +73,7 @@ const Navigation = () => {
                 </a>
                 <a
                   href="https://cryptichat.benmitchell.dev/"
-                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-white hover:bg-gray-700"
+                  className="block px-4 py-2 text-2xl hover:bg-gray-100 text-white hover:bg-gray-700"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="menuitem"
@@ -83,7 +82,7 @@ const Navigation = () => {
                 </a>
                 <a
                   href="https://comp5400-game-of-life.netlify.app/"
-                  className="block px-4 py-2 text-sm hover:bg-gray-100 text-white hover:bg-gray-700"
+                  className="block px-4 py-2 text-2xl hover:bg-gray-100 text-white hover:bg-gray-700"
                   target="_blank"
                   rel="noopener noreferrer"
                   role="menuitem"
@@ -95,13 +94,14 @@ const Navigation = () => {
           </div>
           <a
             href="/contact"
-            className="text-gray-300 hover:text-blue-500 px-1 py-2 rounded-md text-sm font-medium flex items-center"
+            className="text-[#b2977c] hover:text-[#77613c] px-1 py-2 rounded-md text-2xl font-bold flex items-center"
           >
-            <RiContactsBook2Fill className="w-5 h-5 mr-2 text-blue-700" />
-            Contact
+            <RiContactsBook2Fill className="w-8 h-8 mr-2 text-[#68513b]" />
+            CONTACT
           </a>
         </div>
       </div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-4/5 border-t-4 border-[#68513b]"></div>
     </nav>
   );
 };
