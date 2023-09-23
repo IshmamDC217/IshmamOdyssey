@@ -61,7 +61,7 @@ const ContactMe: React.FC = () => {
                         ></textarea>
                     </div>
                     <button type="submit" className="bg-orange-400 text-white px-4 py-2 rounded-md">
-                        Submit
+                        Submit 
                     </button>
                 </form>
             </div>
