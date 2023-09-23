@@ -14,6 +14,7 @@ import Link from 'next/link';
 import click from '../public/click.png'
 import { useInView } from 'react-intersection-observer';
 import { once } from 'process';
+import Heading from './Heading';
 
 const Work: FunctionComponent = () => {
   const [ref, inView] = useInView({ threshold: 0.2 });
@@ -43,7 +44,9 @@ const Work: FunctionComponent = () => {
   ];
 
   return (
-    <section className="workmob">
+    <section>
+      <Heading title='Projects' />
+      <div className='workmob'>
       <div className='glass-container'>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
@@ -87,12 +90,12 @@ const Work: FunctionComponent = () => {
         <div className="project-description my-5 max-w-7xl">
           <Link href='https://cryptichat.benmitchell.dev/'
             target="_blank"
-            rel="noopener noreferrer" className="titleproj text-white text-2xl font-semibold mb-2  
+            rel="noopener noreferrer" className="titleproj text-black text-2xl font-semibold mb-2  
              hover:bg-gray-100 md:hover:bg-transparent md:border-0
-             md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
-             dark:hover:bg-gray-700 dark:hover:text-white 
-             md:dark:hover:bg-transparent flex justify-center items-center">Cryptic Chat</Link>
-          <p className='innerglasscontainer text-black text-center text-lg'>
+             md:hover:text-black md:p-0 dark:text-black md:dark:hover:text-black
+             dark:hover:bg-gray-700 dark:hover:text-black 
+             md:dark:hover:bg-transparent flex justify-center items-center">Metora Web</Link>
+          <p className='innerglasscontainermob text-black text-center text-lg'>
             Metora Cliffs Web is the official website for Metora Cliffs, a video game-inspired progressive metal band
             that composes songs with a Nintendo-esque vibe. The website is developed with a video game theme to reflect
             the band's unique style and energy. It is built using modern web technologies such as Next.js, React, and
@@ -143,7 +146,7 @@ const Work: FunctionComponent = () => {
              md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
              dark:hover:bg-gray-700 dark:hover:text-white 
              md:dark:hover:bg-transparent flex justify-center items-center">Cryptic Chat</Link>
-          <p className="innerglasscontainer text-black text-center text-lg">
+          <p className="innerglasscontainermob2 text-black text-center text-lg">
             Cryptic Chat is a highly secure and privacy-focused messaging platform developed using React JS.
             By implementing robust encryption algorithms, it ensures end-to-end encryption,
             guaranteeing that user communications remain confidential and safeguarded against
@@ -158,7 +161,7 @@ const Work: FunctionComponent = () => {
           </p>
         </div>
       </div>
-      <div className='glass-container2v2' style={{ padding: '15px' }}>
+      <div className='innerglasscontainermob3' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
             <img src={gollogo.src} className='projlogo w-[90px] my-5 mb-8' />
@@ -197,13 +200,13 @@ const Work: FunctionComponent = () => {
             rel="noopener noreferrer"
             className="titleproj text-white text-2xl font-semibold mb-2  
              hover:bg-gray-100 md:hover:bg-transparent md:border-0
-             md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
+             md:hover:text-black md:p-0 dark:text-black md:dark:hover:text-black
              dark:hover:bg-gray-700 dark:hover:text-white 
              md:dark:hover:bg-transparent flex justify-center items-center"
           >
             Game Of Life JS
           </Link>
-          <p className="innerglasscontainer text-black text-center text-lg">
+          <p className="innerglasscontainermob text-black text-center text-lg">
             This implementation showcases Conway's Game of Life using JavaScript, an intriguing cellular automaton
             conceived by the esteemed British mathematician John Horton Conway in 1970. The game unfolds on a
             two-dimensional grid consisting of cells, each existing in either an alive or dead state. The game
@@ -218,6 +221,7 @@ const Work: FunctionComponent = () => {
           </p>
         </div>
 
+      </div>
       </div>
     </section>
   );

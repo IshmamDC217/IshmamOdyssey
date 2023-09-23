@@ -7,7 +7,7 @@ const ContactMe: React.FC = () => {
     return (
         <section className="contactme">
             <div className="container contactcontainer border" style={{ padding: '20px' }}>
-                <h2 className="text-4xl font-bold text-center mb-6">Get in Touch</h2>
+                <h2 className="text-4xl text-white font-bold text-center mb-6">Get in Touch</h2>
                 <p className="text-lg text-center mb-5 text-white">
                     Have a question or want to collaborate? Feel free to reach out to me.
                 </p>

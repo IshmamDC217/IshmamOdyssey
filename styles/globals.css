@@ -84,7 +84,7 @@ section {
 }
 
 .work {
-  background-image: url('./backdrop/shape2.jpg');
+  background-image: url('./backdrop/shape3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -266,7 +266,7 @@ section {
 }
 
 .glass-container {
-  background-color: rgba(0, 0, 0, 0.309);
+  background-color: rgba(196, 174, 146, 0.336);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
@@ -280,10 +280,10 @@ section {
   padding: 5px;
 }
 
-.glass-container2v2 {
-  background-color: rgba(17, 8, 23, 255);
+.innerglasscontainermob3 {
+  background-color: #f3e7db;
   backdrop-filter: blur(10px);
-  border-radius: 10px;
+  border-bottom: #555;
   padding: 20px;
 }
 
@@ -373,7 +373,21 @@ section {
 }
 
 .innerglasscontainer {
-  background-color: rgba(229, 225, 225, 0.638);
+  background-color: rgba(236, 226, 226, 0.877);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.innerglasscontainermob {
+  background-color: rgba(240, 154, 83, 0.638);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.innerglasscontainermob2 {
+  background-color: #f3e7dba2;
   backdrop-filter: blur(10px);
   border-radius: 10px;
   padding: 20px;
@@ -458,7 +472,6 @@ section {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
 .homepagemob .background-video {
@@ -472,7 +485,7 @@ section {
   z-index: -1;
   transform: translate(-50%, -50%);
   object-fit: cover;
-  background: url('/public/modernbackground.jpg') center center no-repeat;
+  background-image: url('/public/homeshape.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -516,21 +529,20 @@ section {
 }
 
 .workmob {
-  background-image: url('./backdrop/shape2.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url('./backdrop/workshape.svg');
+
 }
 
 @media (max-width: 760px) {
   .glass-container {
-    background-color: rgba(81, 138, 213, 0.309);
+    background-color: #f3e7db;
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 0%;
   }
 
   .glass-container2 {
-    background-color: rgba(27, 64, 215, 0.309);
+    background-color: #cc7c3a;
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 0%;
@@ -622,17 +634,18 @@ section {
 }
 
 .toast-style {
-  background-color: rgba(15, 6, 52, 0.356) !important;
+  background-color: #bdaa96 !important;
   color: rgba(255, 255, 255, 0.726) !important;
   font-weight: bold;
 }
 
 .toast-body {
   font-size: 16px;
+  text-align: center;
 }
 
 .toast-progress {
-  background: #ef707b !important;
+  background: #68513b !important;
 }
 
 .prompt-box {
@@ -721,7 +734,7 @@ section {
 
 /* CSS for Hobby page */
 .hobby-page {
-  background-color: #f3e7db;
+  background-color: #f3e7db
 }
 
 .hobby-image-container {

@@ -22,15 +22,15 @@ const Navigation = () => {
   return (
     <nav className="navbar px-4 md:px-24 lg:px-80 py-3 flex justify-between items-center relative sticky top-0 z-10">
       <div className="flex items-center lg:mt-1">
-        <img src={ishlogobw.src} className='h-12 w-12' />
-        <a href="#" className="ody text-4xl font-bold text-black mx-2">The Odyssey</a>
+        <img src={ishlogobw.src} className='h-10 w-10 lg:h-12 lg:w-12' />
+        <a href="#" className="ody text-3xl font-bold text-black mx-2 lg:text-4xl">The Odyssey</a>
       </div>
       <div className="md:hidden">
         <button
           onClick={toggleSidebar}
           className="text-gray-700 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500"
         >
-          {sidebarOpen ? <FaTimes className="w-1 h-1 text-gray-900" /> : <FaBars className="w-6 h-6 mt-2 text-white" />}
+          {sidebarOpen ? <FaTimes className="w-1 h-1 text-gray-900" /> : <FaBars className="w-6 h-6 mt-2 text-[#68513b]" />}
         </button>
       </div>
 

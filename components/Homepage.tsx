@@ -16,7 +16,7 @@ const Homepage = () => {
         className: 'toast-style',
         bodyClassName: 'toast-body',
         progressClassName: 'toast-progress',
-        position: 'bottom-right'
+        position: 'bottom-center'
       });
     };
 

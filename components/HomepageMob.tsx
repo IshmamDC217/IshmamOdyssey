@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import mainMeUpd3 from '../public/mainMeUpd3.jpg';
 import { motion } from 'framer-motion';
-import mainishdpnew2 from '../public/mainishdpnew2.png';
+import mainmeshape from '../public/mainmeshape.png';
 import coolpurp from '../public/coolpurp.gif';
 
 const HomepageMob = () => {
@@ -18,12 +18,10 @@ const HomepageMob = () => {
 
   return (
     <section className="homepagemob">
-      <video autoPlay loop muted playsInline className="background-video">
-        <source src="/background.webm" type="video/webm" />
-        <source src="/background.mp4" type="video/mp4" />
-        <img src="/background.mp4" alt="Background" style={{ width: "100%" }} />
-      </video>
-      <div className="relative h-screen mt-10">
+      <div className="background-video">
+        <img src="/homeshape.jpg" alt="Background" style={{ width: "100%" }} />
+      </div>
+      <div className="relative h-screen mt-8">
         <div className="flex items-center justify-center">
           <div className="mx-auto text-white text-center">
             <motion.div
@@ -32,17 +30,17 @@ const HomepageMob = () => {
               transition={{ duration: 0.8 }}
             >
               <div>
-                <h2 className="text-3xl mb-3">Hi there, I'm </h2>
-                <h1 className="ishahm mb-3 text-4xl font-bold text-blue-300">
+                <h2 className="text-3xl mb-2 font-semibold text-[#68513b]">Hi there, I'm </h2>
+                <h1 className="ishahm text-4xl font-bold text-[#68513b]">
                   Ishmam Ahmed
                 </h1>
                 <motion.p
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className='pfbio max-w-[500px] mb-4 mx-auto p-4 py-2 text-white'
+                  className='pfbio max-w-[500px] mb-7 mx-auto p-4 text-black'
                 >
-                  Allow me to introduce myself as a <b>software engineer</b> and <b>musician</b>. With a <b>BSc in Computer Science</b> and an <b>MEng in Artificial Intelligence</b>, I have a strong foundation in both technical problem-solving and innovative thinking. As a guitarist, I channel my creative passion through music. I work as a software engineer at <a href='https://www.hlrlookup.com' rel="noopener noreferrer" className='font-bold text-blue-300'>HLR Lookup</a> in Leeds and play guitar for the progressive rock band, <a href='https://metoracliffs.netlify.app' rel="noopener noreferrer" className='font-bold text-blue-300'>Metora Cliffs</a>. Blending my technical expertise and musical passion, I create captivating experiences at the intersection of technology and music.
+                  Allow me to introduce myself as a <b className='text-[#68513b]'>software engineer</b> and <b className='text-[#68513b]'>musician</b>. With a <b className='text-[#68513b]'>BSc in Computer Science</b> and an <b className='text-[#68513b]'>MEng in Artificial Intelligence</b>, I have a strong foundation in both technical problem-solving and innovative thinking. As a guitarist, I channel my creative passion through music. I work as a software engineer at <a href='https://www.hlrlookup.com' rel="noopener noreferrer" className='font-bold text-[#68513b]'>HLR Lookup</a> in Leeds and play guitar for the progressive rock band, <a href='https://metoracliffs.netlify.app' rel="noopener noreferrer" className='font-bold text-[#68513b]'>Metora Cliffs</a>. Blending my technical expertise and musical passion, I create captivating experiences at the intersection of technology and music.
                 </motion.p>
               </div>
             </motion.div>
@@ -54,7 +52,7 @@ const HomepageMob = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
-            src={mainishdpnew2.src}
+            src={mainmeshape.src}
             alt="Ishmam Ahmed"
             className="mainDP w-64 md:w-96 md:mt-10 border rounded-full border-white bg-[#ffffffb9]"
             style={{ position: 'relative', zIndex: 1 }}

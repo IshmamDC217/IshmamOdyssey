@@ -60,14 +60,14 @@ const Work: FunctionComponent = () => {
 
   return (
     <animated.section style={springProps} className="work">
-      <Heading title='Projects'/>
-      <div className='glass-container2 border border-gray-500' style={{ padding: '15px' }}>
+      <Heading title='Projects' />
+      <div className='glass-container border border-gray-900' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
-            <img src={metoralogo.src} className='w-[90px] mb-3 ' />
-            <h2 className="text-3xl font-bold mx-14 my-12">Metora Cliffs Website</h2>
+            <img src={metoralogo.src} className='w-[80px] mb-5 ' />
+            <h2 className="text-3xl font-bold mx-6 my-10">Official Band Website</h2>
           </div>
-          <div className="container rounded-lg project-container border border-gray-400 grid grid-cols-2 gap-32" style={{ backgroundColor: '#ffffff25', padding: '80px'}}>
+          <div className="container rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#f3e7dbc5', padding: '80px'}}>
             {metoraweb.map((work, index) => (
               <motion.a
                 key={index}
@@ -107,10 +107,10 @@ const Work: FunctionComponent = () => {
         <div className="project-description my-5 max-w-7xl">
           <Link href='https://metoracliffs.netlify.app'
             target="_blank"
-            rel="noopener noreferrer" className="text-white text-2xl font-semibold mb-2 rounded
+            rel="noopener noreferrer" className="text-black text-2xl font-semibold mb-2 rounded
              hover:bg-gray-100 md:hover:bg-transparent md:border-0
-             md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
-             dark:hover:bg-gray-700 dark:hover:text-white 
+             md:hover:text-black md:p-0 dark:text-black md:dark:hover:text-[#68513b]
+             dark:hover:bg-gray-700 dark:hover:text-black 
              md:dark:hover:bg-transparent flex justify-center items-center">Metora Cliffs Web</Link>
           <p className="innerglasscontainer text-black text-center text-lg">
             Metora Cliffs Web is the official website for Metora Cliffs, a video game-inspired progressive metal band
@@ -126,10 +126,10 @@ const Work: FunctionComponent = () => {
       <div className='glass-container2 rounded-lg my-20 border border-gray-500' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
-            <img src={lock192.src} className='w-[110px] mb-3 border rounded-full' />
-            <h2 className="text-3xl font-bold mx-14 my-9">End-to-End Encrypted Messaging Platform</h2>
+            <img src={lock192.src} className='w-[100px] mb-5 border rounded-full' />
+            <h2 className="text-3xl font-bold mx-6 my-7">End-to-End Encrypted Messaging Platform</h2>
           </div>
-          <div className="container rounded-lg project-container border border-gray-400 grid grid-cols-2 gap-32" style={{ backgroundColor: '#ffffff25', padding: '80px' }}>
+          <div className="container rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#f3e7dbc5', padding: '80px' }}>
             {crypticchat.map((work, index) => (
               <motion.a
                 key={index}
@@ -169,11 +169,11 @@ const Work: FunctionComponent = () => {
         <div className="project-description my-5 max-w-7xl">
           <Link href='https://cryptichat.benmitchell.dev/'
             target="_blank"
-            rel="noopener noreferrer" className="text-white text-2xl font-semibold mb-2 rounded
-             hover:bg-gray-100 md:hover:bg-transparent md:border-0
-             md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
-             dark:hover:bg-gray-700 dark:hover:text-white 
-             md:dark:hover:bg-transparent flex justify-center items-center">Cryptic Chat</Link>
+            rel="noopener noreferrer" className="text-black text-2xl font-semibold mb-2 rounded
+            hover:bg-gray-100 md:hover:bg-transparent md:border-0
+            md:hover:text-black md:p-0 dark:text-black md:dark:hover:text-[#68513b]
+            dark:hover:bg-gray-700 dark:hover:text-black 
+            md:dark:hover:bg-transparent flex justify-center items-center">Cryptic Chat</Link>
           <p className="innerglasscontainer text-black text-center text-lg">
             Cryptic Chat is a highly secure and privacy-focused messaging platform developed using React JS.
             By implementing robust encryption algorithms, it ensures end-to-end encryption,
@@ -192,10 +192,10 @@ const Work: FunctionComponent = () => {
       <div className='glass-container2 rounded-lg border border-gray-500' style={{ padding: '15px' }}>
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
-            <img src={gollogo.src} className='w-[100px] mb-3' />
-            <h2 className="text-3xl font-bold mx-14 my-7">Conway's Game of Life - Javascript</h2>
+            <img src={gollogo.src} className='w-[90px] mb-5' />
+            <h2 className="text-3xl font-bold mx-6 my-7">Conway's Game of Life - Javascript</h2>
           </div>
-          <div className="golcontainer rounded-lg project-container border border-gray-400 grid grid-cols-2 gap-32" style={{ backgroundColor: '#ffffff25', padding: '80px' }}>
+          <div className="golcontainer rounded-lg project-container grid grid-cols-2 gap-32" style={{ backgroundColor: '#f3e7dbc5', padding: '80px' }}>
             {goljs.map((work, index) => (
               <motion.a
                 key={index}
@@ -238,11 +238,11 @@ const Work: FunctionComponent = () => {
             href="https://comp5400-game-of-life.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white text-2xl font-semibold mb-2 rounded
-             hover:bg-gray-100 md:hover:bg-transparent md:border-0
-             md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black
-             dark:hover:bg-gray-700 dark:hover:text-white 
-             md:dark:hover:bg-transparent flex justify-center items-center"
+            className="text-black text-2xl font-semibold mb-2 rounded
+            hover:bg-gray-100 md:hover:bg-transparent md:border-0
+            md:hover:text-black md:p-0 dark:text-black md:dark:hover:text-[#68513b]
+            dark:hover:bg-gray-700 dark:hover:text-black 
+            md:dark:hover:bg-transparent flex justify-center items-center"
           >
             Game Of Life JS
           </Link>
