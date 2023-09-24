@@ -580,7 +580,7 @@ section {
 }
 
 .contactcontainer {
-  background-color: rgba(8, 28, 47, 0.335);
+  background-color: #eb8f17a8;
   backdrop-filter: blur(10px);
   padding: 10px;
   border-radius: 0%;
