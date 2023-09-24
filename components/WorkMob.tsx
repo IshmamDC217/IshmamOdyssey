@@ -44,12 +44,11 @@ const Work: FunctionComponent = () => {
   ];
 
   return (
-    <section>
-      <div className='workmob'>
+    <section className='workmob'>
       <div className='glass-container'>
-      <div className=' headingmob flex justify-center items-center text-5xl w-full border-b-4 border-[#68513b]' style={{color:'#68513b'}}>
-      Projects
-    </div>
+        <div className=' headingmob flex justify-center items-center text-5xl w-full border-b-4 border-[#68513b]' style={{ color: '#68513b' }}>
+          Projects
+        </div>
         &nbsp;
         <div className="container">
           <div style={{ display: 'flex', alignContent: 'center' }}>
@@ -223,8 +222,6 @@ const Work: FunctionComponent = () => {
             captivating mathematical simulation.
           </p>
         </div>
-
-      </div>
       </div>
     </section>
   );
