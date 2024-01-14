@@ -38,7 +38,7 @@ const Work: FunctionComponent = () => {
   const goljs = [
     {
       image: golmac,
-      title: 'Metora Cliffs Web: Homepage',
+      title: 'Game Of Life',
       link: 'https://comp5400-game-of-life.netlify.app/',
     }
   ];
@@ -200,11 +200,11 @@ const Work: FunctionComponent = () => {
             href="https://comp5400-game-of-life.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="titleproj text-white text-2xl font-semibold mb-2  
-             hover:bg-gray-100 md:hover:bg-transparent md:border-0
-             md:hover:text-black md:p-0 dark:text-black md:dark:hover:text-black
-             dark:hover:bg-gray-700 dark:hover:text-white 
-             md:dark:hover:bg-transparent flex justify-center items-center"
+            className="titleproj text-black text-2xl font-semibold mb-2  
+            hover:bg-gray-100 md:hover:bg-transparent md:border-0
+            md:hover:text-black md:p-0 dark:text-black md:dark:hover:text-black
+            dark:hover:bg-gray-700 dark:hover:text-black 
+            md:dark:hover:bg-transparent flex justify-center items-center"
           >
             Game Of Life JS
           </Link>
