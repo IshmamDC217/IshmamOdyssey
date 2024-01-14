@@ -571,7 +571,7 @@ section {
 
 @media (max-width: 376px) {
   .pfbio {
-    font-size: smaller;
+    font-size:small;
   }
 
   .mainDP {
