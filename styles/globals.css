@@ -50,6 +50,7 @@ section {
   place-items: center;
   align-content: center;
   min-height: 100vh;
+  background-color: #f3e7db;
 }
 
 .welcometitle {
@@ -65,7 +66,7 @@ section {
 
 .headingmob {
   font-family: 'Bluu Next', sans-serif;
-  font-size: 4em;
+  font-size: 2em;
 }
 
 .ody {
@@ -132,7 +133,6 @@ section {
   }
 }
 
-/* Trying award css */
 .homepage {
   background-color: #f3e7db;
 }
@@ -483,18 +483,15 @@ section {
   height: 100vh;
 }
 
-.homepagemob .background-video {
+.homepagemob .home-background {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  background-image: url('/public/homeshape.jpg') center center no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; 
+  background-color: #f3e7db;
+  background: url('/public/homeshape.jpg') center center no-repeat;
   background-size: cover;
 }
 
@@ -571,7 +568,7 @@ section {
 
 @media (max-width: 376px) {
   .pfbio {
-    font-size: x-small;
+    font-size: smaller;
   }
 
   .mainDP {

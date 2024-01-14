@@ -18,7 +18,7 @@ const HomepageMob = () => {
 
   return (
     <section className="homepagemob">
-      <div className="background-video">
+      <div className="home-background">
         <img src="/homeshape.jpg" alt="Background" style={{ width: "100%" }} />
       </div>
       <div className="relative h-screen mt-5">
@@ -38,7 +38,7 @@ const HomepageMob = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.3 }}
-                  className='pfbio max-w-[500px] mb-16 mx-auto p-3 font-semibold text-black'
+                  className='pfbio max-w-[800px] mb-16 mx-auto p-2 font-semibold text-black'
                 >
                   Allow me to introduce myself as a <b className='text-[#68513b]'>software engineer</b> and <b className='text-[#68513b]'>musician</b>. Having a Computer Science degree specializing in Artificial Intelligence, I have a strong foundation in both technical problem-solving and innovative thinking. As a guitarist, I channel my creative passion through music. I work as a software engineer at <a href='https://www.hlrlookup.com' rel="noopener noreferrer" className='font-bold text-[#68513b]'>HLR Lookup</a> in Leeds and play guitar for the progressive rock band, <a href='https://metoracliffs.netlify.app' rel="noopener noreferrer" className='font-bold text-[#68513b]'>Metora Cliffs</a>. Blending my technical expertise and musical passion, I create captivating experiences at the intersection of technology and music.
                 </motion.p>
