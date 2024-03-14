@@ -30,7 +30,7 @@ const Navigation = () => {
           onClick={toggleSidebar}
           className="text-gray-700 dark:text-gray-300 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500"
         >
-          {sidebarOpen ? <FaTimes className="w-1 h-1 text-gray-900" /> : <FaBars className="w-6 h-6 mt-2 text-[#68513b]" />}
+          {sidebarOpen ? <FaTimes className="w-1 h-1 text-gray-900" /> : <FaBars className="w-6 h-6 mt-2 text-black" />}
         </button>
       </div>
 
@@ -38,14 +38,14 @@ const Navigation = () => {
 
       <div className="hidden md:flex items-center">
         <div className="ml-10 flex items-baseline space-x-4">
-          <a href="/" className="text-[#b2977c] hover:text-[#77613c] px-3 py-2 rounded-md text-2xl flex font-bold items-center " aria-current="page"><BsHouseDoorFill className="w-8 h-8 mr-2 text-[#68513b]" />
+          <a href="/" className="text-black hover:text-[#ffffff] px-3 py-2 rounded-md text-2xl flex font-bold items-center " aria-current="page"><BsHouseDoorFill className="w-8 h-8 mr-2 text-black" />
             HOME</a>
           <div className="relative mt-2">
             <button
               onClick={toggleDropdown}
-              className="text-[#b2977c] hover:text-[#77613c] px-3 py-2 rounded-md text-2xl font-bold flex items-center"
+              className="text-black hover:text-white px-3 py-2 rounded-md text-2xl font-bold flex items-center"
             >
-              <RiComputerFill className="w-8 h-8 mr-2 text-[#68513b]" />
+              <RiComputerFill className="w-8 h-8 mr-2 text-black" />
               WORK
               <svg
                 className={`w-5 h-5 ml-1 transform ${isDropdownOpen ? 'rotate-180' : ''}`}
@@ -94,14 +94,14 @@ const Navigation = () => {
           </div>
           <a
             href="/contact"
-            className="text-[#b2977c] hover:text-[#77613c] px-1 py-2 rounded-md text-2xl font-bold flex items-center"
+            className="text-black hover:text-white px-1 py-2 rounded-md text-2xl font-bold flex items-center"
           >
-            <RiContactsBook2Fill className="w-8 h-8 mr-2 text-[#68513b]" />
+            <RiContactsBook2Fill className="w-8 h-8 mr-2 text-black" />
             CONTACT
           </a>
         </div>
       </div>
-      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-4/5 border-t-4 border-[#68513b]"></div>
+      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 w-4/5 border-t-4 border-black"></div>
     </nav>
   );
 };

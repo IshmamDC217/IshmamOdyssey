@@ -84,13 +84,13 @@ section {
 } */
 
 .homepage {
-  /* background-image: url('../public/modernbackground.jpg'); */
+  /* background-image: url('../public/bg24.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .work {
-  background-image: url('./backdrop/shape3.jpg');
+  /* background-image: url('./backdrop/shape3.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -365,9 +365,11 @@ section {
 
 .navbar {
   /* padding-bottom: 3%; */
-  background-color: #f3e7db;
+  background-color: #f3e7db8f;
   padding-top: 3%;
   z-index: 2;
+  color: #333; /* Dark gray text color for contrast */
+  font-weight: bold; /* Optional: makes the text bolder */
 }
 
 .sticky {
@@ -468,6 +470,12 @@ section {
 @media (max-width: 760px) {
   .homepage {
     display: none;
+  }
+  .navbar {
+    /* padding-bottom: 3%; */
+    background-color: #f3e7db;
+    padding-top: 3%;
+    z-index: 2;
   }
 }
 
