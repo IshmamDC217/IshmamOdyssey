@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 import { BsHouseDoorFill } from 'react-icons/bs';
 import { RiComputerFill, RiContactsBook2Fill } from 'react-icons/ri';
 import ishlogonewv1 from '../public/ishlogonewv1.png'
-import ishlogobw from '../public/ishlogobw.png'
+import ishlogobw2 from '../public/ishlogobw2.png'
 
 const Navigation = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -22,7 +22,7 @@ const Navigation = () => {
   return (
     <nav className="navbar px-4 md:px-24 lg:px-80 py-3 flex justify-between items-center relative sticky top-0 z-10">
       <div className="flex items-center lg:mt-1">
-        <img src={ishlogobw.src} className='h-10 w-10 lg:h-12 lg:w-12' />
+        <img src={ishlogobw2.src} className='h-10 w-10 lg:h-12 lg:w-12' />
         <a href="#" className="ody text-3xl font-bold text-black mx-2 lg:text-4xl">The Odyssey</a>
       </div>
       <div className="md:hidden">
@@ -38,14 +38,14 @@ const Navigation = () => {
 
       <div className="hidden md:flex items-center">
         <div className="ml-10 flex items-baseline space-x-4">
-          <a href="/" className="text-black hover:text-[#ffffff] px-3 py-2 rounded-md text-2xl flex font-bold items-center " aria-current="page"><BsHouseDoorFill className="w-8 h-8 mr-2 text-black" />
+          <a href="/" className="text-black hover:text-[#68513b] px-3 py-2 rounded-md text-2xl flex font-bold items-center " aria-current="page"><BsHouseDoorFill className="w-8 h-8 mr-2 text-[#68513b]" />
             HOME</a>
           <div className="relative mt-2">
             <button
               onClick={toggleDropdown}
-              className="text-black hover:text-white px-3 py-2 rounded-md text-2xl font-bold flex items-center"
+              className="text-black hover:text-[#68513b] px-3 py-2 rounded-md text-2xl font-bold flex items-center"
             >
-              <RiComputerFill className="w-8 h-8 mr-2 text-black" />
+              <RiComputerFill className="w-8 h-8 mr-2 text-[#68513b]" />
               WORK
               <svg
                 className={`w-5 h-5 ml-1 transform ${isDropdownOpen ? 'rotate-180' : ''}`}
@@ -94,9 +94,9 @@ const Navigation = () => {
           </div>
           <a
             href="/contact"
-            className="text-black hover:text-white px-1 py-2 rounded-md text-2xl font-bold flex items-center"
+            className="text-black hover:text-[#68513b] px-1 py-2 rounded-md text-2xl font-bold flex items-center"
           >
-            <RiContactsBook2Fill className="w-8 h-8 mr-2 text-black" />
+            <RiContactsBook2Fill className="w-8 h-8 mr-2 text-[#68513b]" />
             CONTACT
           </a>
         </div>

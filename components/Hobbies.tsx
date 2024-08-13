@@ -3,7 +3,7 @@ import Heading from './Heading';
 
 const Hobby: React.FC = () => {
     return (
-        <section className="hobby-page grid grid-cols-1 md:grid-cols-2">
+        <section className="hobby-page md:p-10 grid grid-cols-1 md:grid-cols-2">
             <div className="hobby-image-container mb-8 md:mb-0">
                 <img src="/Hobpic.png" alt="Hobbies" className="hobby-large-image mx-auto md:mx-0" style={{ padding: '10px', borderRadius: '30px' }} />
             </div>
@@ -12,7 +12,7 @@ const Hobby: React.FC = () => {
                 <a href='https://www.instagram.com/metoracliffsmusic/?hl=en'
                     className='text-white p-3 rounded-lg bg-[#68513b] ml-4 font-semibold'>Check out my Band!</a>
 
-                <p className="hobby-list-intro text-xl text-black font-semibold max-w-[900px] pl-6 pr-4 pt-8">Many see hobbies as a form of leisure, but for me,
+                <p className="text-sm md:text-lg lg:text-xl hobby-list-intro text-black font-semibold max-w-[900px] p-5 pt-8">Many see hobbies as a form of leisure, but for me,
                     they are integral to both my personal and professional development.
                     My love for music and guitar-playing has not only fueled my creativity
                     but also honed my project management skills, key in my career as a software developer.
